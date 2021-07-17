@@ -35,7 +35,7 @@ const Paragraph = styled.p`
 const DownloadButton = styled(PrimaryButton)`
   margin-top: 2rem;
   width: 100%;
-`
+`;
 
 const HobbieList = styled.ul`
   padding: 0 0;
@@ -74,25 +74,23 @@ const About = React.forwardRef((props, ref) => (
       <AboutArticle>
         <ArticleTitle>About me</ArticleTitle>
         <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
-          aliquid voluptatem! Quam iste architecto at atque id doloribus vel
-          alias.
+          Hi! my name is Diego Puche, a python back-end developer focused on API
+          development using Django Rest Framework.
         </Paragraph>
 
         <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel
-          debitis ducimus eligendi quam iusto laborum odio! Soluta vero
-          reiciendis corporis vitae quis. Dolorem sapiente maiores doloremque
-          repellat debitis esse eveniet nobis repudiandae, consectetur nisi
-          veritatis ducimus, minima, explicabo magni.
+          I consider myself as an analytical and thinker person, always
+          searching for the most effective solution to the problems I face.
+          Python allows me to solve these problems fast and elegantly, making it
+          one of my favorite languages.
         </Paragraph>
 
         <Paragraph>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam labore,
-          tenetur perferendis assumenda atque et!
+          Being static is something that I don't like, and that's the reason why
+          I learn through experience, to make better projects in the future.
         </Paragraph>
 
-        <DownloadButton >Download CV</DownloadButton>
+        <DownloadButton>Download CV</DownloadButton>
       </AboutArticle>
       <AboutArticle>
         <ArticleTitle>Hobbies</ArticleTitle>

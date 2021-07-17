@@ -106,7 +106,7 @@ const skillSetItems = [
       },
     ],
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, facilis.",
+      "My main technologies, and the ones that I'm familiar with. I will continue working on these.",
   },
   {
     title: "Extra",
@@ -135,7 +135,7 @@ const skillSetItems = [
       },
     ],
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid.",
+      "Technologies that I have worked with, but I'm not specialized in them.",
   },
   {
     title: "Tools",
@@ -162,7 +162,7 @@ const skillSetItems = [
       },
     ],
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid.",
+      "The main tools that I use to build my projects.",
   },
 ];
 
