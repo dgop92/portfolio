@@ -58,12 +58,12 @@ const contactList = [
   {
     name: "Mail me",
     icon: <SiGmail color="#EA4335" />,
-    href: "#",
+    href: "mailto:inevaup@gmail.com",
   },
   {
     name: "Visit my github",
     icon: <FiGithub color="#fff" />,
-    href: "#",
+    href: "https://github.com/dgop92",
   },
 ];
 
