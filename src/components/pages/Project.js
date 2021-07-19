@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { BasePageCenter, BaseSection, PageTitle, PrimaryButton } from "../commons";
-import { FaBookOpen } from "react-icons/fa";
+import { FaSearch, FaBriefcase, FaCalendarCheck, FaTerminal } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
+import { CgMathEqual } from "react-icons/cg";
 
 const ProjectPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -68,32 +69,39 @@ const RepositoryButton = styled(PrimaryButton)`
 
 const projecItems = [
   {
-    name: "Project Name",
-    icon: <FaBookOpen />,
+    name: "Find your gap",
+    icon: <FaSearch />,
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing eli Maiores usto fuga vitae itaque quaerat inventore tenetur quam nostrum ipsam tempore!",
-    href: "#",
+      "an API to find common gaps (free hours between the university classes) given the schedules from a group of classmates",
+    href: "https://github.com/dgop92/find-your-gap-api",
   },
   {
-    name: "Project Name",
-    icon: <FaBookOpen />,
+    name: "Retail Tech Business API",
+    icon: <FaBriefcase />,
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing eli Maiores usto fuga vitae itaque quaerat inventore tenetur quam nostrum ipsam tempore!",
-    href: "#",
+      "an API that allows you to control exits and entries while collecting useful data to create insights for your business",
+    href: "https://github.com/dgop92/retail-tech-business-api",
   },
   {
-    name: "Project Name",
-    icon: <FaBookOpen />,
+    name: "Wolfram Helper",
+    icon: <CgMathEqual />,
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing eli Maiores usto fuga vitae itaque quaerat inventore tenetur quam nostrum ipsam tempore!",
-    href: "#",
+      "A mini-framework design to solve mathematical problems step-by-step using a solver template class and scraping the results from wolfram alpha",
+    href: "https://github.com/dgop92/wolfram-helper",
   },
   {
-    name: "Project Name",
-    icon: <FaBookOpen />,
+    name: "Schedule Maker",
+    icon: <FaCalendarCheck />,
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing eli Maiores usto fuga vitae itaque quaerat inventore tenetur quam nostrum ipsam tempore!",
-    href: "#",
+      "This project generates a combination of schedules to help students in the process of making a new schedule for the next semester",
+    href: "https://github.com/dgop92/schedule-maker",
+  },
+  {
+    name: "Utils3",
+    icon: <FaTerminal />,
+    description:
+      "My own CLI which provides a set of utilities for 2021 virtual classes.",
+    href: "https://github.com/dgop92/utils3",
   },
 ];
 
