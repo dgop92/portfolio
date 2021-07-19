@@ -68,43 +68,50 @@ const hobbieNames = [
 ];
 const hobbieIcons = [<FaBookOpen />, <FaDesktop />, <FaCode />];
 
-const About = React.forwardRef((props, ref) => (
-  <AboutPage {...props} ref={ref}>
-    <AboutSection>
-      <AboutArticle>
-        <ArticleTitle>About me</ArticleTitle>
-        <Paragraph>
-          Hi! my name is Diego Puche, a python back-end developer focused on API
-          development using Django Rest Framework.
-        </Paragraph>
+const About = React.forwardRef((props, ref) => {
+  const downloadCV = () => {
+    alert("it's too early to have one of those");
+  };
 
-        <Paragraph>
-          I consider myself as an analytical and thinker person, always
-          searching for the most effective solution to the problems I face.
-          Python allows me to solve these problems fast and elegantly, making it
-          one of my favorite languages.
-        </Paragraph>
+  return (
+    <AboutPage {...props} ref={ref}>
+      <AboutSection>
+        <AboutArticle>
+          <ArticleTitle>About me</ArticleTitle>
+          <Paragraph>
+            Hi! my name is Diego Puche, a python back-end developer focused on
+            API development using Django Rest Framework.
+          </Paragraph>
 
-        <Paragraph>
-          Being static is something that I don't like, and that's the reason why
-          I learn through experience, to make better projects in the future.
-        </Paragraph>
+          <Paragraph>
+            I consider myself as an analytical and thinker person, always
+            searching for the most effective solution to the problems I face.
+            Python allows me to solve these problems fast and elegantly, making
+            it one of my favorite languages.
+          </Paragraph>
 
-        <DownloadButton>Download CV</DownloadButton>
-      </AboutArticle>
-      <AboutArticle>
-        <ArticleTitle>Hobbies</ArticleTitle>
-        <HobbieList>
-          {hobbieNames.map((name, index) => (
-            <HobbieItem key={index}>
-              {hobbieIcons[index]}
-              <span>{name}</span>
-            </HobbieItem>
-          ))}
-        </HobbieList>
-      </AboutArticle>
-    </AboutSection>
-  </AboutPage>
-));
+          <Paragraph>
+            Being static is something that I don't like, and that's the reason
+            why I learn through experience, to make better projects in the
+            future.
+          </Paragraph>
+
+          <DownloadButton onClick={downloadCV}>Download CV</DownloadButton>
+        </AboutArticle>
+        <AboutArticle>
+          <ArticleTitle>Hobbies</ArticleTitle>
+          <HobbieList>
+            {hobbieNames.map((name, index) => (
+              <HobbieItem key={index}>
+                {hobbieIcons[index]}
+                <span>{name}</span>
+              </HobbieItem>
+            ))}
+          </HobbieList>
+        </AboutArticle>
+      </AboutSection>
+    </AboutPage>
+  );
+});
 
 export default About;
