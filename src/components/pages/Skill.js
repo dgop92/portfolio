@@ -135,7 +135,7 @@ const skillSetItems = [
       },
     ],
     paragraph:
-      "Technologies that I have worked with, but I'm not specialized in them.",
+      "Technologies that I have worked with, but I'm not specialized.",
   },
   {
     title: "Tools",
