@@ -4,6 +4,7 @@ export const mainTheme = {
     background: { paper: "#fff", default: "#F9F9FB", },
     contrast: "#fff",
     divider: "#BDBDBD",
+    dividerLight: "#EAEAEA",
     primary: {
       light2: "#6273A2",
       light1: "#4E5C84",

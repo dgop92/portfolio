@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import Sidebar from "./Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaGlobe } from "react-icons/fa";
 import { navItems } from "../../constants/globals";
 
 const fixedAnimation = (bg) => keyframes`
@@ -72,7 +73,8 @@ const NavCenter = styled.div`
     & > ul {
       display: none;
     }
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -93,12 +95,59 @@ const LinkItem = styled.a`
   text-decoration: none;
 `;
 
-export default function Header({ scrollToSection }) {
+const LanguageDropDown = styled.button`
+  position: relative;
+
+  & > svg {
+    color: ${(props) => props.theme.palette.contrast};
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  margin-right: 2rem;
+  @media (min-width: 550px) {
+    margin-left: 1rem;
+  }
+
+  &:hover > div {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: ${(props) => props.theme.palette.background.paper};
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  right: -15px;
+  top: 0;
+`;
+
+const DropDownItem = styled.span`
+  font-size: 1rem;
+  padding: 0.9rem 1.3rem;
+  background-color: ${(props) => props.theme.palette.background.paper};
+  color: ${(props) => props.theme.palette.text.secondary};
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: ${(props) => props.theme.palette.primary.light1};
+  }
+
+  -webkit-tap-highlight-color: transparent;
+`;
+
+export default function Header({ scrollToSection, changeLanguage }) {
   const navRef = useRef(null);
   const [fixed, setFixed] = useState(false);
   const [firstScroll, setFirstScroll] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
-  // const [hamburgerActive, setHamburgerActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -155,6 +204,17 @@ export default function Header({ scrollToSection }) {
               </LinkItem>
             ))}
           </LinkList>
+          <LanguageDropDown as="div">
+            <FaGlobe />
+            <DropdownContent>
+              <DropDownItem onClick={() => changeLanguage("es")}>
+                Español
+              </DropDownItem>
+              <DropDownItem onClick={() => changeLanguage("en")}>
+                English
+              </DropDownItem>
+            </DropdownContent>
+          </LanguageDropDown>
         </NavCenter>
       </NavBase>
     </React.Fragment>
