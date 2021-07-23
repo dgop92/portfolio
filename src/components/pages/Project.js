@@ -1,9 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { BasePageCenter, BaseSection, PageTitle, PrimaryButton } from "../commons";
-import { FaSearch, FaBriefcase, FaCalendarCheck, FaTerminal } from "react-icons/fa";
+import {
+  BasePageCenter,
+  BaseSection,
+  PageTitle,
+  PrimaryButton,
+} from "../commons";
+import {
+  FaSearch,
+  FaBriefcase,
+  FaCalendarCheck,
+  FaTerminal,
+} from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { CgMathEqual } from "react-icons/cg";
+import { useLanguage } from "../base/customContexts";
 
 const ProjectPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -11,7 +22,6 @@ const ProjectPage = styled(BasePageCenter)`
 `;
 
 const ProjectSection = styled(BaseSection)`
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 1rem;
@@ -19,7 +29,6 @@ const ProjectSection = styled(BaseSection)`
   @media (max-width: 500px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-
 `;
 
 const ProjectContainer = styled.article`
@@ -71,58 +80,57 @@ const projecItems = [
   {
     name: "Find your gap",
     icon: <FaSearch />,
-    description:
-      "an API to find common gaps (free hours between the university classes) given the schedules from a group of classmates",
+    description: "PROJECT_DESCRIPTION_1",
     href: "https://github.com/dgop92/find-your-gap-api",
   },
   {
     name: "Retail Tech Business API",
     icon: <FaBriefcase />,
-    description:
-      "an API that allows you to control exits and entries while collecting useful data to create insights for your business",
+    description: "PROJECT_DESCRIPTION_2",
     href: "https://github.com/dgop92/retail-tech-business-api",
   },
   {
     name: "Wolfram Helper",
     icon: <CgMathEqual />,
-    description:
-      "A mini-framework design to solve mathematical problems step-by-step using a solver template class and scraping the results from wolfram alpha",
+    description: "PROJECT_DESCRIPTION_3",
     href: "https://github.com/dgop92/wolfram-helper",
   },
   {
     name: "Schedule Maker",
     icon: <FaCalendarCheck />,
-    description:
-      "This project generates a combination of schedules to help students in the process of making a new schedule for the next semester",
+    description: "PROJECT_DESCRIPTION_4",
     href: "https://github.com/dgop92/schedule-maker",
   },
   {
     name: "Utils3",
     icon: <FaTerminal />,
-    description:
-      "My own CLI which provides a set of utilities for 2021 virtual classes.",
+    description: "PROJECT_DESCRIPTION_5",
     href: "https://github.com/dgop92/utils3",
   },
 ];
 
-const Project = React.forwardRef((props, ref) => (
-  <ProjectPage {...props} ref={ref}>
-    <PageTitle>Projects</PageTitle>
-    <ProjectSection>
-      {projecItems.map((projectData, index) => (
-        <ProjectContainer key={index}>
-          <ProjectTitle>
-            {projectData.icon}
-            <span>{projectData.name}</span>
-          </ProjectTitle>
-          <Paragraph>{projectData.description}</Paragraph>
-          <RepositoryButton as="a" href={projectData.href}>
-            <SiGithub />
-          </RepositoryButton>
-        </ProjectContainer>
-      ))}
-    </ProjectSection>
-  </ProjectPage>
-));
+const Project = React.forwardRef((props, ref) => {
+  const langStrs = useLanguage();
+
+  return (
+    <ProjectPage {...props} ref={ref}>
+      <PageTitle>{langStrs.PROJECT_TITLE}</PageTitle>
+      <ProjectSection>
+        {projecItems.map((projectData, index) => (
+          <ProjectContainer key={index}>
+            <ProjectTitle>
+              {projectData.icon}
+              <span>{projectData.name}</span>
+            </ProjectTitle>
+            <Paragraph>{langStrs[projectData.description]}</Paragraph>
+            <RepositoryButton as="a" href={projectData.href}>
+              <SiGithub />
+            </RepositoryButton>
+          </ProjectContainer>
+        ))}
+      </ProjectSection>
+    </ProjectPage>
+  );
+});
 
 export default Project;
