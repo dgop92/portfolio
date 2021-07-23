@@ -16,6 +16,7 @@ import { ReactComponent as PyhonLogo } from "./custom-dev-icons/python.svg";
 import { ReactComponent as FigmaLogo } from "./custom-dev-icons/figma.svg";
 import { ReactComponent as SerenadeLogo } from "./custom-dev-icons/serenade.svg";
 import { BasePageCenter, BaseSection, PageTitle } from "../commons";
+import { useLanguage } from "../base/customContexts";
 
 const SkillPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -23,7 +24,6 @@ const SkillPage = styled(BasePageCenter)`
 `;
 
 const SkillSection = styled(BaseSection)`
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 1rem;
@@ -105,8 +105,7 @@ const skillSetItems = [
         icon: <SiPostgresql color="#336791" />,
       },
     ],
-    paragraph:
-      "My main technologies, and the ones that I'm familiar with. I will continue working on these.",
+    paragraph: "SKILL_SET_1",
   },
   {
     title: "Extra",
@@ -134,8 +133,7 @@ const skillSetItems = [
         icon: <SiMaterialUi color="#0081CB" />,
       },
     ],
-    paragraph:
-      "Technologies that I have worked with, but I'm not specialized.",
+    paragraph: "SKILL_SET_2",
   },
   {
     title: "Tools",
@@ -161,31 +159,34 @@ const skillSetItems = [
         icon: <SerenadeLogo width="64" height="71" />,
       },
     ],
-    paragraph:
-      "The main tools that I use to build my projects.",
+    paragraph: "SKILL_SET_3",
   },
 ];
 
-const Skill = React.forwardRef((props, ref) => (
-  <SkillPage {...props} ref={ref}>
-    <PageTitle>Skills</PageTitle>
-    <SkillSection>
-      {skillSetItems.map((skillSetData, index) => (
-        <SkillSetContainer key={index}>
-          <Title>{skillSetData.title}</Title>
-          <IconContainer>
-            {skillSetData.iconBoxs.map((iconBoxData) => (
-              <TechIconBox>
-                {iconBoxData.icon}
-                <span>{iconBoxData.name}</span>
-              </TechIconBox>
-            ))}
-          </IconContainer>
-          <Paragraph>{skillSetData.paragraph}</Paragraph>
-        </SkillSetContainer>
-      ))}
-    </SkillSection>
-  </SkillPage>
-));
+const Skill = React.forwardRef((props, ref) => {
+  const langStrs = useLanguage();
+
+  return (
+    <SkillPage {...props} ref={ref}>
+      <PageTitle>{langStrs.SKILL_TITLE}</PageTitle>
+      <SkillSection>
+        {skillSetItems.map((skillSetData, index) => (
+          <SkillSetContainer key={index}>
+            <Title>{skillSetData.title}</Title>
+            <IconContainer>
+              {skillSetData.iconBoxs.map((iconBoxData) => (
+                <TechIconBox>
+                  {iconBoxData.icon}
+                  <span>{iconBoxData.name}</span>
+                </TechIconBox>
+              ))}
+            </IconContainer>
+            <Paragraph>{langStrs[skillSetData.paragraph]}</Paragraph>
+          </SkillSetContainer>
+        ))}
+      </SkillSection>
+    </SkillPage>
+  );
+});
 
 export default Skill;

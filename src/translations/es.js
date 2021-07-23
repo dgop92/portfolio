@@ -17,7 +17,13 @@ const translations = {
   HOBBIE_ITEM_3: "Escribir código para tareas repetitivas.",
   
   DOWNLOAD_CV: "Descargar CV",
-  CV_MESSAGE: "Es muy temprano para tener uno de esos."
+  CV_MESSAGE: "Es muy temprano para tener uno de esos.",
+
+  SKILL_TITLE: "Habilidades",
+
+  SKILL_SET_1: "Mis tecnologías principales y aquellas con las cuales estoy familiarizado. Seguiré trabajando en estas.",
+  SKILL_SET_2: "Tecnologías con las que he trabajado, pero no estoy especializado en ellas.",
+  SKILL_SET_3: "Las principales herramientas que uso para construir mis proyectos.",
 };
 
 export default translations;
