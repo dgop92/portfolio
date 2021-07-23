@@ -1,1 +1,6 @@
-export const navItems = ["home", "about", "skills", "projects"];
+export const navItems = [
+  "LINK_HOME",
+  "LINK_ABOUT",
+  "LINK_SKILLS",
+  "LINK_PROJECTS",
+];

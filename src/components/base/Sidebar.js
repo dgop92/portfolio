@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { FaTimes, FaHome, FaUserAlt, FaTools, FaToolbox } from "react-icons/fa";
 import { navItems } from "../../constants/globals";
+import { useLanguage } from "../base/customContexts";
 
 const activeSidebar = css`
   transform: translateX(0%);
@@ -66,6 +67,8 @@ const SidebarCloseItem = styled(SidebarBase)`
 const navIcons = [<FaHome />, <FaUserAlt />, <FaTools />, <FaToolbox />];
 
 export default function Sidebar({ scrollToSection, active, setActive }) {
+  const langStrs = useLanguage();
+
   const goToLink = (event, index) => {
     scrollToSection(event, index);
     setActive(false);
@@ -85,7 +88,7 @@ export default function Sidebar({ scrollToSection, active, setActive }) {
             key={index}
           >
             {navIcons[index]}
-            <span>{item}</span>
+            <span>{langStrs[item]}</span>
           </SidebarItem>
         ))}
       </LinksContainer>

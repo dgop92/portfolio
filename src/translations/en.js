@@ -1,4 +1,6 @@
 const translations = {
+  JOB_TITLE: "Python junior developer",
+
   LINK_HOME: "home",
   LINK_ABOUT: "about",
   LINK_SKILLS: "skills",

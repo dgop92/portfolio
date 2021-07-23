@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaGlobe } from "react-icons/fa";
 import { navItems } from "../../constants/globals";
+import { useLanguage } from "../base/customContexts";
 
 const fixedAnimation = (bg) => keyframes`
   from {background-color: transparent;}
@@ -149,6 +150,8 @@ export default function Header({ scrollToSection, changeLanguage }) {
   const [firstScroll, setFirstScroll] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
 
+  const langStrs = useLanguage();
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.pageYOffset;
@@ -200,7 +203,7 @@ export default function Header({ scrollToSection, changeLanguage }) {
                 key={index}
                 href={`#${item}`}
               >
-                {item}
+                <span>{langStrs[item]}</span>
               </LinkItem>
             ))}
           </LinkList>
