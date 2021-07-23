@@ -3,6 +3,19 @@ const translations = {
   LINK_ABOUT: "acerca de",
   LINK_SKILLS: "habilidades",
   LINK_PROJECTS: "proyectos",
+
+  ABOUT_TITLE: "Acerca de mí",
+  
+  ABOUT_PARAGRAPH_1: "Hola! Mi nombre es Diego Puche, desarrollador back-end python centrado en el desarrollo de API usando Django Rest framework.",
+  ABOUT_PARAGRAPH_2: "Me considero una persona analítica y pensadora, siempre buscando la solución más efectiva a los problemas que me enfrento. Python me permite resolver estos problemas rápidamente y elegantemente, haciéndolo uno de mis lenguajes preferidos.",
+  ABOUT_PARAGRAPH_3: "Ser estático es algo que no me gusta, es por eso que siempre aprendo a través de la experiencia, con el fin de poder hacer mejores proyectos en el futuro.",
+
+  HOBBIE_ITEM_1: "Leer libros de psicología y negocios.",
+  HOBBIE_ITEM_2: "Ver películas y series.",
+  HOBBIE_ITEM_3: "Escribir código para tareas repetitivas.",
+  
+  DOWNLOAD_CV: "Descargar CV",
+  CV_MESSAGE: "Es muy temprano para tener uno de esos."
 };
 
 export default translations;

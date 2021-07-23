@@ -28,6 +28,9 @@ export default function App() {
     });
   };
 
+  /* 
+  It is not necessary to use i18n due to this project is quite simple
+  */
   const changeLanguage = (languageCode) => {
     import(`../translations/${languageCode}`).then(
       ({ default: translations }) => {

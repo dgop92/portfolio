@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BasePageCenter, BaseSection, PrimaryButton } from "../commons";
 import { FaBookOpen, FaDesktop, FaCode } from "react-icons/fa";
+import { useLanguage } from "../base/customContexts";
 
 const AboutPage = styled(BasePageCenter)``;
 
@@ -62,41 +63,31 @@ const HobbieItem = styled.li`
 `;
 
 const hobbieNames = [
-  "Read psychology and bussiness books",
-  "Watch films and series",
-  "Write code or scripts for repetitive tasks",
+  "HOBBIE_ITEM_1",
+  "HOBBIE_ITEM_2",
+  "HOBBIE_ITEM_3",
 ];
+
 const hobbieIcons = [<FaBookOpen />, <FaDesktop />, <FaCode />];
 
 const About = React.forwardRef((props, ref) => {
+  const langStrs = useLanguage();
+
   const downloadCV = () => {
-    alert("it's too early to have one of those");
+    alert(langStrs.CV_MESSAGE);
   };
 
   return (
     <AboutPage {...props} ref={ref}>
       <AboutSection>
         <AboutArticle>
-          <ArticleTitle>About me</ArticleTitle>
-          <Paragraph>
-            Hi! my name is Diego Puche, a python back-end developer focused on
-            API development using Django Rest Framework.
-          </Paragraph>
-
-          <Paragraph>
-            I consider myself as an analytical and thinker person, always
-            searching for the most effective solution to the problems I face.
-            Python allows me to solve these problems fast and elegantly, making
-            it one of my favorite languages.
-          </Paragraph>
-
-          <Paragraph>
-            Being static is something that I don't like, and that's the reason
-            why I learn through experience, to make better projects in the
-            future.
-          </Paragraph>
-
-          <DownloadButton onClick={downloadCV}>Download CV</DownloadButton>
+          <ArticleTitle>{langStrs.ABOUT_TITLE}</ArticleTitle>
+          <Paragraph>{langStrs.ABOUT_PARAGRAPH_1}</Paragraph>
+          <Paragraph>{langStrs.ABOUT_PARAGRAPH_2}</Paragraph>
+          <Paragraph>{langStrs.ABOUT_PARAGRAPH_3}</Paragraph>
+          <DownloadButton onClick={downloadCV}>
+            {langStrs.DOWNLOAD_CV}
+          </DownloadButton>
         </AboutArticle>
         <AboutArticle>
           <ArticleTitle>Hobbies</ArticleTitle>
@@ -104,7 +95,7 @@ const About = React.forwardRef((props, ref) => {
             {hobbieNames.map((name, index) => (
               <HobbieItem key={index}>
                 {hobbieIcons[index]}
-                <span>{name}</span>
+                <span>{langStrs[name]}</span>
               </HobbieItem>
             ))}
           </HobbieList>
