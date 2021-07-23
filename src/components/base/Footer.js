@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SiGmail } from "react-icons/si";
 import { FiGithub } from "react-icons/fi";
+import { useLanguage } from "./customContexts";
 
 const FooterBase = styled.footer`
   display: flex;
@@ -56,31 +57,34 @@ const Copyright = styled.p`
 
 const contactList = [
   {
-    name: "Mail me",
+    name: "CONTACT_ITEM_1",
     icon: <SiGmail color="#EA4335" />,
     href: "mailto:inevaup@gmail.com",
   },
   {
-    name: "Visit my github",
+    name: "CONTACT_ITEM_2",
     icon: <FiGithub color="#fff" />,
     href: "https://github.com/dgop92",
   },
 ];
 
 export default function Footer() {
+
+  const langStrs = useLanguage();
+
   return (
     <FooterBase>
-      <FooterTitle>Contact me</FooterTitle>
+      <FooterTitle>{langStrs.CONTACT_TITLE}</FooterTitle>
       <ContactList>
         {contactList.map((contactData, index) => (
           <FooterItem key={index} href={contactData.href}>
             {contactData.icon}
-            <span>{contactData.name}</span>
+            <span>{langStrs[contactData.name]}</span>
           </FooterItem>
         ))}
       </ContactList>
       <Copyright>
-        Developed and designed by Diego Puche © {new Date().getFullYear()}
+        {langStrs.CONTACT_COPY} © {new Date().getFullYear()}
       </Copyright>
     </FooterBase>
   );

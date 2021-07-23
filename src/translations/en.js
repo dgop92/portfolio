@@ -41,6 +41,11 @@ const translations = {
     "This project generates a combination of schedules to help students in the process of making a new schedule for the next semester.",
   PROJECT_DESCRIPTION_5:
     "My own CLI which provides a set of utilities for 2021 virtual classes.",
+
+  CONTACT_TITLE: "Contact me",
+  CONTACT_ITEM_1: "Mail me",
+  CONTACT_ITEM_2: "Visit my Github",
+  CONTACT_COPY: "Developed and designed by Diego Puche"
 };
 
 export default translations;

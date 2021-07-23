@@ -43,6 +43,11 @@ const translations = {
     "Este proyecto genera una combinación de horarios para ayudar a los estudiantes en el proceso de creación de un horario para el próximo semestre.",
   PROJECT_DESCRIPTION_5:
     "Mi propia CLI que provee un conjunto de utilidades para las clases virtuales del 2021.",
+
+  CONTACT_TITLE: "Contactame",
+  CONTACT_ITEM_1: "Escribeme un correo",
+  CONTACT_ITEM_2: "Visita mi Github",
+  CONTACT_COPY: "Desarrollado y diseñado por Diego Puche"
 };
 
 export default translations;
