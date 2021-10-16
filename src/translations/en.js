@@ -52,6 +52,8 @@ const translations = {
   GUTILS_DESCRIPTION:
     "a CLI that contains utilities for graph theory and graph algorithms.",
 
+  PROJECT_SECONDARY_PROJECTS: "See secondary projects",
+
   CONTACT_TITLE: "Contact me",
   CONTACT_ITEM_1: "Mail me",
   CONTACT_ITEM_2: "Visit my Github",

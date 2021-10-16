@@ -53,6 +53,8 @@ const translations = {
   GUTILS_DESCRIPTION:
     "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
 
+  PROJECT_SECONDARY_PROJECTS: "Ver proyectos secundarios",
+
   CONTACT_TITLE: "Contactame",
   CONTACT_ITEM_1: "Escribeme un correo",
   CONTACT_ITEM_2: "Visita mi Github",

@@ -193,7 +193,7 @@ const Project = React.forwardRef((props, ref) => {
       </ProjectSection>
       {!secondaryProjects && (
         <LoadButton onClick={() => setSecondaryProjects(true)}>
-          Ver projectos secundarios
+          {langStrs.PROJECT_SECONDARY_PROJECTS}
         </LoadButton>
       )}
     </ProjectPage>
