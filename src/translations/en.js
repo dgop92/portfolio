@@ -48,7 +48,7 @@ const translations = {
   BINTREE_BUILDER_DESCRIPTION:
     "A small app to quickly build binary trees and get their representation in code. Useful for testing binary tree algorithms",
   INEVAUP_NEGOCIOS_DESCRIPTION:
-    "a simple app for managing a small tech retail businesses",
+    "a simple app for managing a small tech retail businesses. See the repository for more information about the preview",
   GUTILS_DESCRIPTION:
     "a CLI that contains utilities for graph theory and graph algorithms.",
 

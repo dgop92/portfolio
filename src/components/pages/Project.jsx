@@ -11,6 +11,7 @@ import {
 import { SiGithub } from "react-icons/si";
 import { CgMathEqual } from "react-icons/cg";
 import { ImTree } from "react-icons/im";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 import {
   BasePageCenter,
   BaseSection,
@@ -78,14 +79,19 @@ const RepositoryButton = styled(PrimaryButton)`
     color: ${(props) => props.theme.palette.common.white};
     font-size: 1.5rem;
   }
-  align-self: flex-end;
+  padding: 0.5rem;
+  margin: 0.5rem 0.2rem;
+`;
+
+const ProjectActionsContainer = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
   padding: 0.5rem;
 `;
 
 const TechTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
 `;
 
 const TechTag = styled.span`
@@ -115,7 +121,8 @@ const projectItems = [
     icon: <FaSearch />,
     description: "FINDGAP_DESCRIPTION",
     href: "https://github.com/dgop92/find-your-gap-api",
-    techTags: [techTagsOptions.DJANGO],
+    viewProjectHref: "https://find-your-gap.netlify.app/home",
+    techTags: [techTagsOptions.DJANGO, techTagsOptions.REACTJS],
   },
   {
     name: "Retail Tech Business API",
@@ -143,6 +150,7 @@ const projectItems = [
     icon: <ImTree />,
     description: "BINTREE_BUILDER_DESCRIPTION",
     href: "https://github.com/dgop92/binary-tree-builder",
+    viewProjectHref: "https://dgop92.github.io/binary-tree-builder",
     techTags: [techTagsOptions.JS],
   },
 ];
@@ -153,6 +161,7 @@ const extraProjects = [
     icon: <FaBusinessTime />,
     description: "INEVAUP_NEGOCIOS_DESCRIPTION",
     href: "https://github.com/dgop92/inevaup-negocios-react",
+    viewProjectHref: "https://inevaup-negocios.netlify.app/login",
     techTags: [techTagsOptions.REACTJS],
   },
   {
@@ -203,16 +212,23 @@ function ProjectSet({ projects }) {
             <span>{projectData.name}</span>
           </ProjectTitle>
           <Paragraph>{langStrs[projectData.description]}</Paragraph>
-          {projectData?.techTags?.map((techTagData) => (
-            <TechTagContainer>
-              <TechTag bgColor={techTagData.bgColor}>
+          <TechTagContainer>
+            {projectData?.techTags?.map((techTagData) => (
+              <TechTag key={techTagData.name} bgColor={techTagData.bgColor}>
                 {techTagData.name}
               </TechTag>
-            </TechTagContainer>
-          ))}
-          <RepositoryButton as="a" href={projectData.href}>
-            <SiGithub />
-          </RepositoryButton>
+            ))}
+          </TechTagContainer>
+          <ProjectActionsContainer>
+            <RepositoryButton as="a" href={projectData.href}>
+              <SiGithub />
+            </RepositoryButton>
+            {projectData?.viewProjectHref && (
+              <RepositoryButton as="a" href={projectData.viewProjectHref}>
+                <BsBoxArrowUpRight />
+              </RepositoryButton>
+            )}
+          </ProjectActionsContainer>
         </ProjectContainer>
       ))}
     </>

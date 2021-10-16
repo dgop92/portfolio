@@ -49,7 +49,7 @@ const translations = {
   BINTREE_BUILDER_DESCRIPTION:
     "Una pequeña aplicación para construir árboles binarios de manera rápida y obtener su representación en código. Útil para probar algoritmos de árboles binarios.",
   INEVAUP_NEGOCIOS_DESCRIPTION:
-    "Una aplicación para manejar un pequeño negocio minorista de tecnología.",
+    "Una aplicación para manejar un pequeño negocio minorista de tecnología. Mira el repositorio para más información acerca de la preview",
   GUTILS_DESCRIPTION:
     "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
 
