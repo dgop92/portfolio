@@ -42,3 +42,14 @@ export const PrimaryButton = styled(BaseButton)`
     background-color: ${(props) => props.theme.palette.primary.light1};
   }
 `;
+
+export const SecondaryButton = styled(BaseButton)`
+  background-color: inherit;
+  color: ${(props) => props.theme.palette.primary.main};
+  border: 1px solid ${(props) => props.theme.palette.primary.main};;
+  /* transition: background-color 0.3s; */
+  &:hover{
+    color: ${(props) => props.theme.palette.primary.light2};
+    border-color: ${(props) => props.theme.palette.primary.light2};
+  }
+`;

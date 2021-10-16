@@ -33,16 +33,24 @@ const translations = {
 
   PROJECT_TITLE: "Projects",
 
-  PROJECT_DESCRIPTION_1:
+  FINDGAP_DESCRIPTION:
     "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates.",
-  PROJECT_DESCRIPTION_2:
+  RETAIL_TECH_DESCRIPTION:
     "An API that allows you to control exits and entries while collecting useful data to create insights for your business.",
-  PROJECT_DESCRIPTION_3:
+  WHELPER_DESCRIPTION:
     "A mini-framework design to solve mathematical problems step-by-step using a solver template class and scraping the results from wolfram alpha.",
-  PROJECT_DESCRIPTION_4:
+  SCHEDULE_MAKER_DESCRIPTION:
     "This project generates a combination of schedules to help students in the process of making a new schedule for the next semester.",
-  PROJECT_DESCRIPTION_5:
+  UTILS3_DESCRIPTION:
     "My own CLI which provides a set of utilities for 2021 virtual classes.",
+  COMMUNOTES_DESCRIPTION:
+    "An API that allows students to search for images of formulas that are uploaded by the community. The most worked project that I have made with Django, although it is still in development.",
+  BINTREE_BUILDER_DESCRIPTION:
+    "A small app to quickly build binary trees and get their representation in code. Useful for testing binary tree algorithms",
+  INEVAUP_NEGOCIOS_DESCRIPTION:
+    "a simple app for managing a small tech retail businesses",
+  GUTILS_DESCRIPTION:
+    "a CLI that contains utilities for graph theory and graph algorithms.",
 
   CONTACT_TITLE: "Contact me",
   CONTACT_ITEM_1: "Mail me",

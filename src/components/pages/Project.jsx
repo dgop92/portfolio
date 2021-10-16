@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import {
   FaSearch,
   FaBriefcase,
   FaCalendarCheck,
   FaTerminal,
+  FaUniversity,
+  FaBusinessTime,
 } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { CgMathEqual } from "react-icons/cg";
+import { ImTree } from "react-icons/im";
 import {
   BasePageCenter,
   BaseSection,
   PageTitle,
   PrimaryButton,
+  SecondaryButton,
 } from "../commons";
 import { useLanguage } from "../base/customContexts";
 
@@ -76,61 +80,109 @@ const RepositoryButton = styled(PrimaryButton)`
   padding: 0.5rem;
 `;
 
-const projecItems = [
+const LoadButton = styled(SecondaryButton)`
+  margin-top: 2rem;
+`;
+
+const projectItems = [
+  {
+    name: "Communotes API",
+    icon: <FaUniversity />,
+    description: "COMMUNOTES_DESCRIPTION",
+    href: "https://github.com/dgop92/communotes",
+  },
   {
     name: "Find your gap",
     icon: <FaSearch />,
-    description: "PROJECT_DESCRIPTION_1",
+    description: "FINDGAP_DESCRIPTION",
     href: "https://github.com/dgop92/find-your-gap-api",
   },
   {
     name: "Retail Tech Business API",
     icon: <FaBriefcase />,
-    description: "PROJECT_DESCRIPTION_2",
+    description: "RETAIL_TECH_DESCRIPTION",
     href: "https://github.com/dgop92/retail-tech-business-api",
   },
   {
     name: "Wolfram Helper",
     icon: <CgMathEqual />,
-    description: "PROJECT_DESCRIPTION_3",
+    description: "WHELPER_DESCRIPTION",
     href: "https://github.com/dgop92/wolfram-helper",
+  },
+  {
+    name: "G-Utils",
+    icon: <FaTerminal />,
+    description: "GUTILS_DESCRIPTION",
+    href: "https://github.com/dgop92/gutils",
+  },
+  {
+    name: "Binary tree builder",
+    icon: <ImTree />,
+    description: "BINTREE_BUILDER_DESCRIPTION",
+    href: "https://github.com/dgop92/binary-tree-builder",
+  },
+];
+
+const extraProjects = [
+  {
+    name: "Inevaup Negocios",
+    icon: <FaBusinessTime />,
+    description: "INEVAUP_NEGOCIOS_DESCRIPTION",
+    href: "https://github.com/dgop92/inevaup-negocios-react",
   },
   {
     name: "Schedule Maker",
     icon: <FaCalendarCheck />,
-    description: "PROJECT_DESCRIPTION_4",
+    description: "SCHEDULE_MAKER_DESCRIPTION",
     href: "https://github.com/dgop92/schedule-maker",
   },
   {
     name: "Utils3",
     icon: <FaTerminal />,
-    description: "PROJECT_DESCRIPTION_5",
+    description: "UTILS3_DESCRIPTION",
     href: "https://github.com/dgop92/utils3",
   },
 ];
 
 const Project = React.forwardRef((props, ref) => {
+  const [secondaryProjects, setSecondaryProjects] = useState(false);
   const langStrs = useLanguage();
 
   return (
     <ProjectPage {...props} ref={ref}>
       <PageTitle>{langStrs.PROJECT_TITLE}</PageTitle>
       <ProjectSection>
-        {projecItems.map(projectData => (
-          <ProjectContainer key={projectData.name}>
-            <ProjectTitle>
-              {projectData.icon}
-              <span>{projectData.name}</span>
-            </ProjectTitle>
-            <Paragraph>{langStrs[projectData.description]}</Paragraph>
-            <RepositoryButton as="a" href={projectData.href}>
-              <SiGithub />
-            </RepositoryButton>
-          </ProjectContainer>
-        ))}
+        <ProjectSet projects={projectItems} />
+        {secondaryProjects && <ProjectSet projects={extraProjects} />}
       </ProjectSection>
+      {!secondaryProjects && (
+        <LoadButton onClick={() => setSecondaryProjects(true)}>
+          Ver projectos secundarios
+        </LoadButton>
+      )}
     </ProjectPage>
   );
 });
+
+function ProjectSet({ projects }) {
+  const langStrs = useLanguage();
+
+  return (
+    <>
+      {projects.map((projectData) => (
+        <ProjectContainer key={projectData.name}>
+          <ProjectTitle>
+            {projectData.icon}
+            <span>{projectData.name}</span>
+          </ProjectTitle>
+          <Paragraph>{langStrs[projectData.description]}</Paragraph>
+          <RepositoryButton as="a" href={projectData.href}>
+            <SiGithub />
+          </RepositoryButton>
+        </ProjectContainer>
+      ))}
+    </>
+  );
+}
 
 export default Project;

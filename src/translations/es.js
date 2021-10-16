@@ -34,21 +34,29 @@ const translations = {
 
   PROJECT_TITLE: "Proyectos",
 
-  PROJECT_DESCRIPTION_1:
+  FINDGAP_DESCRIPTION:
     "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes.",
-  PROJECT_DESCRIPTION_2:
+  RETAIL_TECH_DESCRIPTION:
     "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio. ",
-  PROJECT_DESCRIPTION_3:
+  WHELPER_DESCRIPTION:
     "Un mini-framework diseñado para resolver problemas matemáticos paso por paso usando el template pattern y recolectando los datos de wolfram alpha.",
-  PROJECT_DESCRIPTION_4:
+  SCHEDULE_MAKER_DESCRIPTION:
     "Este proyecto genera una combinación de horarios para ayudar a los estudiantes en el proceso de creación de un horario para el próximo semestre.",
-  PROJECT_DESCRIPTION_5:
+  UTILS3_DESCRIPTION:
     "Mi propia CLI que provee un conjunto de utilidades para las clases virtuales del 2021.",
+  COMMUNOTES_DESCRIPTION:
+    "Una API que permite a los estudiantes buscar imágenes de fórmulas qué son subidas por la comunidad. El proyecto más trabajado que hecho con Django, aunque aún sigue en desarrollo.",
+  BINTREE_BUILDER_DESCRIPTION:
+    "Una pequeña aplicación para construir árboles binarios de manera rápida y obtener su representación en código. Útil para probar algoritmos de árboles binarios.",
+  INEVAUP_NEGOCIOS_DESCRIPTION:
+    "Una aplicación para manejar un pequeño negocio minorista de tecnología.",
+  GUTILS_DESCRIPTION:
+    "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
 
   CONTACT_TITLE: "Contactame",
   CONTACT_ITEM_1: "Escribeme un correo",
   CONTACT_ITEM_2: "Visita mi Github",
-  CONTACT_COPY: "Desarrollado y diseñado por Diego Puche"
+  CONTACT_COPY: "Desarrollado y diseñado por Diego Puche",
 };
 
 export default translations;
