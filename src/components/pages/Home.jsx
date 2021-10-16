@@ -5,7 +5,7 @@ import { useLanguage } from "../base/customContexts";
 
 const HomeBase = styled(PageBase)`
   background-image: 
-  url(${process.env.PUBLIC_URL + "/assets/svgs/curve-home-bg.svg"});
+  url(${`${process.env.PUBLIC_URL}/assets/svgs/curve-home-bg.svg`});
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;

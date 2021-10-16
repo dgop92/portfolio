@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  BasePageCenter,
-  BaseSection,
-  PageTitle,
-  PrimaryButton,
-} from "../commons";
-import {
   FaSearch,
   FaBriefcase,
   FaCalendarCheck,
@@ -14,6 +8,12 @@ import {
 } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { CgMathEqual } from "react-icons/cg";
+import {
+  BasePageCenter,
+  BaseSection,
+  PageTitle,
+  PrimaryButton,
+} from "../commons";
 import { useLanguage } from "../base/customContexts";
 
 const ProjectPage = styled(BasePageCenter)`
@@ -116,8 +116,8 @@ const Project = React.forwardRef((props, ref) => {
     <ProjectPage {...props} ref={ref}>
       <PageTitle>{langStrs.PROJECT_TITLE}</PageTitle>
       <ProjectSection>
-        {projecItems.map((projectData, index) => (
-          <ProjectContainer key={index}>
+        {projecItems.map(projectData => (
+          <ProjectContainer key={projectData.name}>
             <ProjectTitle>
               {projectData.icon}
               <span>{projectData.name}</span>

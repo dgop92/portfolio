@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { BasePageCenter, BaseSection, PrimaryButton } from "../commons";
 import { FaBookOpen, FaDesktop, FaCode } from "react-icons/fa";
+import { BasePageCenter, BaseSection, PrimaryButton } from "../commons";
 import { useLanguage } from "../base/customContexts";
 
 const AboutPage = styled(BasePageCenter)``;
@@ -74,6 +74,7 @@ const About = React.forwardRef((props, ref) => {
   const langStrs = useLanguage();
 
   const downloadCV = () => {
+    // eslint-disable-next-line no-alert
     alert(langStrs.CV_MESSAGE);
   };
 
@@ -93,7 +94,7 @@ const About = React.forwardRef((props, ref) => {
           <ArticleTitle>Hobbies</ArticleTitle>
           <HobbieList>
             {hobbieNames.map((name, index) => (
-              <HobbieItem key={index}>
+              <HobbieItem key={name}>
                 {hobbieIcons[index]}
                 <span>{langStrs[name]}</span>
               </HobbieItem>
