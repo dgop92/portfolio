@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const mainTheme = {
   palette: {
     common: { black: "#000", white: "#fff" },

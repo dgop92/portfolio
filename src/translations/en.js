@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 const translations = {
   JOB_TITLE: "Python junior developer",
 
@@ -45,7 +47,7 @@ const translations = {
   CONTACT_TITLE: "Contact me",
   CONTACT_ITEM_1: "Mail me",
   CONTACT_ITEM_2: "Visit my Github",
-  CONTACT_COPY: "Developed and designed by Diego Puche"
+  CONTACT_COPY: "Developed and designed by Diego Puche",
 };
 
 export default translations;

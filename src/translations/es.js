@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const translations = {
   JOB_TITLE: "Desarrollador python junior",
 
