@@ -9,7 +9,7 @@ import Skill from "./pages/Skill";
 import Project from "./pages/Project";
 import Footer from "./base/Footer";
 import { LanguageContext } from "./base/customContexts";
-import defaultLanguage from "../translations/en"
+import defaultLanguage from "../translations/en";
 
 export default function App() {
   const [language, setLanguage] = useState(defaultLanguage);
@@ -50,7 +50,7 @@ export default function App() {
         <About id="about" ref={refs[1]} />
         <Skill id="skills" ref={refs[2]} />
         <Project id="projects" ref={refs[3]} />
-        <Footer></Footer>
+        <Footer />
       </ThemeProvider>
     </LanguageContext.Provider>
   );

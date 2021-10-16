@@ -69,15 +69,14 @@ const contactList = [
 ];
 
 export default function Footer() {
-
   const langStrs = useLanguage();
 
   return (
     <FooterBase>
       <FooterTitle>{langStrs.CONTACT_TITLE}</FooterTitle>
       <ContactList>
-        {contactList.map((contactData, index) => (
-          <FooterItem key={index} href={contactData.href}>
+        {contactList.map((contactData) => (
+          <FooterItem key={contactData.name} href={contactData.href}>
             {contactData.icon}
             <span>{langStrs[contactData.name]}</span>
           </FooterItem>

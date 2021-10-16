@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
-import Sidebar from "./Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaGlobe } from "react-icons/fa";
+import Sidebar from "./Sidebar";
 import { navItems } from "../../constants/globals";
-import { useLanguage } from "../base/customContexts";
+import { useLanguage } from "./customContexts";
 
 const fixedAnimation = (bg) => keyframes`
   from {background-color: transparent;}
@@ -182,7 +182,7 @@ export default function Header({ scrollToSection, changeLanguage }) {
   };
 
   return (
-    <React.Fragment>
+    <>
       <Sidebar
         active={sidebarActive}
         setActive={setSidebarActive}
@@ -200,7 +200,7 @@ export default function Header({ scrollToSection, changeLanguage }) {
             {navItems.map((item, index) => (
               <LinkItem
                 onClick={(event) => scrollToSection(event, navRef, index)}
-                key={index}
+                key={item}
                 href={`#${item}`}
               >
                 <span>{langStrs[item]}</span>
@@ -220,6 +220,6 @@ export default function Header({ scrollToSection, changeLanguage }) {
           </LanguageDropDown>
         </NavCenter>
       </NavBase>
-    </React.Fragment>
+    </>
   );
 }
