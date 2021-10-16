@@ -19,6 +19,7 @@ import {
   SecondaryButton,
 } from "../commons";
 import { useLanguage } from "../base/customContexts";
+import { techTagsOptions } from "../../constants/globals";
 
 const ProjectPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -67,17 +68,34 @@ const Paragraph = styled.p`
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   color: ${(props) => props.theme.palette.text.secondary};
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
 `;
 
 const RepositoryButton = styled(PrimaryButton)`
   width: fit-content;
   & > svg {
-    color: ${(props) => props.theme.palette.primary.white};
+    color: ${(props) => props.theme.palette.common.white};
     font-size: 1.5rem;
   }
   align-self: flex-end;
   padding: 0.5rem;
+`;
+
+const TechTagContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+`;
+
+const TechTag = styled.span`
+  color: ${(props) => props.theme.palette.common.white};
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  background-color: ${(props) => props.bgColor};
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  margin: 0.5rem;
 `;
 
 const LoadButton = styled(SecondaryButton)`
@@ -90,36 +108,42 @@ const projectItems = [
     icon: <FaUniversity />,
     description: "COMMUNOTES_DESCRIPTION",
     href: "https://github.com/dgop92/communotes",
+    techTags: [techTagsOptions.DJANGO],
   },
   {
     name: "Find your gap",
     icon: <FaSearch />,
     description: "FINDGAP_DESCRIPTION",
     href: "https://github.com/dgop92/find-your-gap-api",
+    techTags: [techTagsOptions.DJANGO],
   },
   {
     name: "Retail Tech Business API",
     icon: <FaBriefcase />,
     description: "RETAIL_TECH_DESCRIPTION",
     href: "https://github.com/dgop92/retail-tech-business-api",
+    techTags: [techTagsOptions.DJANGO],
   },
   {
     name: "Wolfram Helper",
     icon: <CgMathEqual />,
     description: "WHELPER_DESCRIPTION",
     href: "https://github.com/dgop92/wolfram-helper",
+    techTags: [techTagsOptions.PYTHON],
   },
   {
     name: "G-Utils",
     icon: <FaTerminal />,
     description: "GUTILS_DESCRIPTION",
     href: "https://github.com/dgop92/gutils",
+    techTags: [techTagsOptions.PYTHON],
   },
   {
     name: "Binary tree builder",
     icon: <ImTree />,
     description: "BINTREE_BUILDER_DESCRIPTION",
     href: "https://github.com/dgop92/binary-tree-builder",
+    techTags: [techTagsOptions.JS],
   },
 ];
 
@@ -129,18 +153,21 @@ const extraProjects = [
     icon: <FaBusinessTime />,
     description: "INEVAUP_NEGOCIOS_DESCRIPTION",
     href: "https://github.com/dgop92/inevaup-negocios-react",
+    techTags: [techTagsOptions.REACTJS],
   },
   {
     name: "Schedule Maker",
     icon: <FaCalendarCheck />,
     description: "SCHEDULE_MAKER_DESCRIPTION",
     href: "https://github.com/dgop92/schedule-maker",
+    techTags: [techTagsOptions.PYTHON],
   },
   {
     name: "Utils3",
     icon: <FaTerminal />,
     description: "UTILS3_DESCRIPTION",
     href: "https://github.com/dgop92/utils3",
+    techTags: [techTagsOptions.PYTHON],
   },
 ];
 
@@ -176,6 +203,13 @@ function ProjectSet({ projects }) {
             <span>{projectData.name}</span>
           </ProjectTitle>
           <Paragraph>{langStrs[projectData.description]}</Paragraph>
+          {projectData?.techTags?.map((techTagData) => (
+            <TechTagContainer>
+              <TechTag bgColor={techTagData.bgColor}>
+                {techTagData.name}
+              </TechTag>
+            </TechTagContainer>
+          ))}
           <RepositoryButton as="a" href={projectData.href}>
             <SiGithub />
           </RepositoryButton>
