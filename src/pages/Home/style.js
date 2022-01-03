@@ -1,17 +1,14 @@
-import React from "react";
 import styled from "styled-components";
-import { PageBase } from "../commons";
-import { useLanguage } from "../base/customContexts";
+import { PageBase } from "../../components/layout";
 
-const HomeBase = styled(PageBase)`
-  background-image: 
-  url(${`${process.env.PUBLIC_URL}/assets/svgs/curve-home-bg.svg`});
+export const HomeBase = styled(PageBase)`
+  background-image: url(${`${process.env.PUBLIC_URL}/assets/svgs/curve-home-bg.svg`});
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
 `;
 
-const NameContainer = styled.div`
+export const NameContainer = styled.div`
   margin: auto 4rem;
   padding: 1rem;
 
@@ -37,32 +34,17 @@ const NameContainer = styled.div`
   }
 `;
 
-const MainName = styled.h2`
+export const MainName = styled.h2`
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   color: ${(props) => props.theme.palette.text.primary};
   margin: 0.4rem 0;
 `;
-const JobName = styled.h5`
+export const JobName = styled.h5`
   font-size: 1.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   color: ${(props) => props.theme.palette.text.secondary};
   margin: 0.4rem 0;
 `;
-
-const Home = React.forwardRef((props, ref) => {
-  const langStrs = useLanguage();
-
-  return (
-    <HomeBase {...props} ref={ref}>
-      <NameContainer>
-        <MainName>Diego Puche</MainName>
-        <JobName>{langStrs.JOB_TITLE}</JobName>
-      </NameContainer>
-    </HomeBase>
-  );
-});
-
-export default Home;

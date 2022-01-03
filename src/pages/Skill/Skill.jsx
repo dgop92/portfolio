@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import {
   SiCss3,
   SiDjango,
@@ -12,81 +11,21 @@ import {
   SiReact,
   SiVisualstudiocode,
 } from "react-icons/si";
-import { ReactComponent as PyhonLogo } from "./custom-dev-icons/python.svg";
-import { ReactComponent as FigmaLogo } from "./custom-dev-icons/figma.svg";
-import { ReactComponent as SerenadeLogo } from "./custom-dev-icons/serenade.svg";
-import { BasePageCenter, BaseSection, PageTitle } from "../commons";
-import { useLanguage } from "../base/customContexts";
-
-const SkillPage = styled(BasePageCenter)`
-  flex-direction: column;
-  align-items: center;
-`;
-
-const SkillSection = styled(BaseSection)`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 1rem;
-
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
-
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-`;
-
-const SkillSetContainer = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: ${(props) => props.theme.palette.background.paper};
-  border-radius: 1rem;
-`;
-
-const IconContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  max-width: 450px;
-  flex-grow: 1;
-`;
-
-const Title = styled.h6`
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
-  color: ${(props) => props.theme.palette.text.primary};
-  text-align: center;
-  margin: 1rem 0.5rem;
-`;
-
-const TechIconBox = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 1rem;
-
-  & > svg {
-    font-size: 4rem;
-  }
-
-  & > span {
-    font-family: "Poppins", sans-serif;
-    color: ${(props) => props.theme.palette.text.primary};
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-  }
-`;
-
-const Paragraph = styled.p`
-  font-size: 1rem;
-  font-family: "Poppins", sans-serif;
-  color: ${(props) => props.theme.palette.text.secondary};
-  text-align: center;
-`;
+import { ReactComponent as PyhonLogo } from "../../assets/custom-dev-icons/python.svg";
+import { ReactComponent as FigmaLogo } from "../../assets/custom-dev-icons/figma.svg";
+// eslint-disable-next-line max-len
+import { ReactComponent as SerenadeLogo } from "../../assets/custom-dev-icons/serenade.svg";
+import { PageTitle } from "../../components/layout";
+import {
+  SkillPage,
+  SkillSection,
+  SkillSetContainer,
+  IconContainer,
+  Title,
+  TechIconBox,
+  Paragraph,
+} from "./style";
+import { useLanguage } from "../../context/customContexts";
 
 const skillSetItems = [
   {
@@ -170,7 +109,7 @@ const Skill = React.forwardRef((props, ref) => {
     <SkillPage {...props} ref={ref}>
       <PageTitle>{langStrs.SKILL_TITLE}</PageTitle>
       <SkillSection>
-        {skillSetItems.map(skillSetData => (
+        {skillSetItems.map((skillSetData) => (
           <SkillSetContainer key={skillSetData.title}>
             <Title>{skillSetData.title}</Title>
             <IconContainer>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import {
   FaSearch,
   FaBriefcase,
@@ -12,101 +11,21 @@ import { SiGithub } from "react-icons/si";
 import { CgMathEqual } from "react-icons/cg";
 import { ImTree } from "react-icons/im";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import {
-  BasePageCenter,
-  BaseSection,
-  PageTitle,
-  PrimaryButton,
-  SecondaryButton,
-} from "../commons";
-import { useLanguage } from "../base/customContexts";
+import { PageTitle } from "../../components/layout";
+import { useLanguage } from "../../context/customContexts";
 import { techTagsOptions } from "../../constants/globals";
-
-const ProjectPage = styled(BasePageCenter)`
-  flex-direction: column;
-  align-items: center;
-`;
-
-const ProjectSection = styled(BaseSection)`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  gap: 1rem;
-
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-`;
-
-const ProjectContainer = styled.article`
-  display: flex;
-  flex-direction: column;
-  background-color: ${(props) => props.theme.palette.background.paper};
-
-  padding: 1.2rem;
-`;
-
-const ProjectTitle = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  color: ${(props) => props.theme.palette.text.primary};
-  font-family: "Poppins", sans-serif;
-  border-bottom: 1px solid ${(props) => props.theme.palette.divider};
-  padding-bottom: 1rem;
-
-  & > span {
-    margin-left: 1rem;
-    font-weight: bold;
-  }
-
-  & > svg {
-    color: ${(props) => props.theme.palette.primary.light1};
-    font-size: 1.5rem;
-  }
-`;
-
-const Paragraph = styled.p`
-  font-size: 1rem;
-  font-family: "Poppins", sans-serif;
-  color: ${(props) => props.theme.palette.text.secondary};
-  margin-bottom: 1rem;
-  flex-grow: 1;
-`;
-
-const RepositoryButton = styled(PrimaryButton)`
-  width: fit-content;
-  & > svg {
-    color: ${(props) => props.theme.palette.common.white};
-    font-size: 1.5rem;
-  }
-  padding: 0.5rem;
-  margin: 0.5rem 0.2rem;
-`;
-
-const ProjectActionsContainer = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 0.5rem;
-`;
-
-const TechTagContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const TechTag = styled.span`
-  color: ${(props) => props.theme.palette.common.white};
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  background-color: ${(props) => props.bgColor};
-  border-radius: 0.5rem;
-  padding: 0.3rem 0.8rem;
-  margin: 0.5rem;
-`;
-
-const LoadButton = styled(SecondaryButton)`
-  margin-top: 2rem;
-`;
+import {
+  ProjectPage,
+  ProjectSection,
+  ProjectContainer,
+  ProjectTitle,
+  Paragraph,
+  RepositoryButton,
+  ProjectActionsContainer,
+  TechTagContainer,
+  TechTag,
+  LoadButton,
+} from "./style";
 
 const projectItems = [
   {
