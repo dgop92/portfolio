@@ -57,13 +57,13 @@ export const TechIconBox = styled.div`
   margin: 1rem;
 
   & > svg {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   & > span {
     font-family: "Poppins", sans-serif;
     color: ${(props) => props.theme.palette.text.primary};
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem 0;
   }
 `;

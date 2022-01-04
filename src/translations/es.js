@@ -25,6 +25,9 @@ const translations = {
 
   SKILL_TITLE: "Habilidades",
 
+  SKILL_SECTION_1: "Tecnologías y lenguajes",
+  SKILL_SECTION_2: "Herramientas ",
+
   SKILL_SET_1:
     "Mis tecnologías principales y aquellas con las cuales estoy familiarizado. Seguiré trabajando en estas.",
   SKILL_SET_2:

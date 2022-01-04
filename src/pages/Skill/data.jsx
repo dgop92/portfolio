@@ -18,7 +18,7 @@ import { ReactComponent as SerenadeLogo } from "../../assets/custom-dev-icons/se
 
 export const skillSetItems = [
   {
-    title: "Main",
+    title: "SKILL_SECTION_1",
     iconBoxs: [
       {
         name: "Python",
@@ -28,16 +28,6 @@ export const skillSetItems = [
         name: "Django",
         icon: <SiDjango color="#092E20" />,
       },
-      {
-        name: "Postgres",
-        icon: <SiPostgresql color="#336791" />,
-      },
-    ],
-    paragraph: "SKILL_SET_1",
-  },
-  {
-    title: "Extra",
-    iconBoxs: [
       {
         name: "HTML",
         icon: <SiHtml5 color="#E34F26" />,
@@ -60,11 +50,15 @@ export const skillSetItems = [
         name: "Material Ui",
         icon: <SiMaterialUi color="#0081CB" />,
       },
+      {
+        name: "Postgres",
+        icon: <SiPostgresql color="#336791" />,
+      },
     ],
-    paragraph: "SKILL_SET_2",
+    paragraph: "SKILL_SET_1",
   },
   {
-    title: "Tools",
+    title: "SKILL_SECTION_2",
     iconBoxs: [
       {
         name: "Vs Code",
@@ -84,7 +78,7 @@ export const skillSetItems = [
       },
       {
         name: "Serenade",
-        icon: <SerenadeLogo width="64" height="71" />,
+        icon: <SerenadeLogo height="48" />,
       },
     ],
     paragraph: "SKILL_SET_3",

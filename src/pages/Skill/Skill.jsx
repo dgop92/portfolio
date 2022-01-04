@@ -21,7 +21,7 @@ const Skill = React.forwardRef((props, ref) => {
       <SkillSection>
         {skillSetItems.map((skillSetData) => (
           <SkillSetContainer key={skillSetData.title}>
-            <Title>{skillSetData.title}</Title>
+            <Title>{langStrs[skillSetData.title]}</Title>
             <IconContainer>
               {skillSetData.iconBoxs.map((iconBoxData) => (
                 <TechIconBox>
