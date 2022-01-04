@@ -13,19 +13,19 @@ import { techTagsOptions } from "../../constants/globals";
 
 export const projectItems = [
   {
+    name: "GapFind",
+    icon: <FaSearch />,
+    description: "FINDGAP_DESCRIPTION",
+    href: "https://github.com/dgop92/gfind",
+    viewProjectHref: "https://gapfind.netlify.app",
+    techTags: [techTagsOptions.DJANGO, techTagsOptions.REACTJS],
+  },
+  {
     name: "Communotes API",
     icon: <FaUniversity />,
     description: "COMMUNOTES_DESCRIPTION",
     href: "https://github.com/dgop92/communotes",
     techTags: [techTagsOptions.DJANGO],
-  },
-  {
-    name: "Find your gap",
-    icon: <FaSearch />,
-    description: "FINDGAP_DESCRIPTION",
-    href: "https://github.com/dgop92/find-your-gap-api",
-    viewProjectHref: "https://find-your-gap.netlify.app/home",
-    techTags: [techTagsOptions.DJANGO, techTagsOptions.REACTJS],
   },
   {
     name: "Retail Tech Business API",
@@ -35,11 +35,12 @@ export const projectItems = [
     techTags: [techTagsOptions.DJANGO],
   },
   {
-    name: "Wolfram Helper",
-    icon: <CgMathEqual />,
-    description: "WHELPER_DESCRIPTION",
-    href: "https://github.com/dgop92/wolfram-helper",
-    techTags: [techTagsOptions.PYTHON],
+    name: "Binary tree builder",
+    icon: <ImTree />,
+    description: "BINTREE_BUILDER_DESCRIPTION",
+    href: "https://github.com/dgop92/binary-tree-builder-typescript",
+    viewProjectHref: "https://binary-tree-builder.netlify.app/",
+    techTags: [techTagsOptions.TYPESCRIPT],
   },
   {
     name: "G-Utils",
@@ -47,14 +48,6 @@ export const projectItems = [
     description: "GUTILS_DESCRIPTION",
     href: "https://github.com/dgop92/gutils",
     techTags: [techTagsOptions.PYTHON],
-  },
-  {
-    name: "Binary tree builder",
-    icon: <ImTree />,
-    description: "BINTREE_BUILDER_DESCRIPTION",
-    href: "https://github.com/dgop92/binary-tree-builder",
-    viewProjectHref: "https://dgop92.github.io/binary-tree-builder",
-    techTags: [techTagsOptions.JS],
   },
 ];
 
@@ -66,6 +59,13 @@ export const extraProjects = [
     href: "https://github.com/dgop92/inevaup-negocios-react",
     viewProjectHref: "https://inevaup-negocios.netlify.app/login",
     techTags: [techTagsOptions.REACTJS],
+  },
+  {
+    name: "Wolfram Helper",
+    icon: <CgMathEqual />,
+    description: "WHELPER_DESCRIPTION",
+    href: "https://github.com/dgop92/wolfram-helper",
+    techTags: [techTagsOptions.PYTHON],
   },
   {
     name: "Schedule Maker",

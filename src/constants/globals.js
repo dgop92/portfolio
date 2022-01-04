@@ -8,7 +8,7 @@ export const navItems = [
 export const techTagsOptions = {
   PYTHON: {
     name: "Python",
-    bgColor: "#3498DB",
+    bgColor: "#9B59B6",
   },
   DJANGO: {
     name: "Django",
@@ -21,5 +21,9 @@ export const techTagsOptions = {
   JS: {
     name: "Javascript",
     bgColor: "#F1C40F",
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    bgColor: "#2980B9",
   },
 };
