@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BasePageCenter, BaseSection } from "../../components/layout";
+import { withScrollFadeInAnimation } from "../../components/hocs";
 
 export const SkillPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -20,14 +21,17 @@ export const SkillSection = styled(BaseSection)`
   }
 `;
 
-export const SkillSetContainer = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: ${(props) => props.theme.palette.background.paper};
-  border-radius: 1rem;
-`;
+export const SkillSetContainer = withScrollFadeInAnimation(
+  styled.article`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: ${(props) => props.theme.palette.background.paper};
+    border-radius: 1rem;
+  `,
+  0.2
+);
 
 export const IconContainer = styled.div`
   display: flex;

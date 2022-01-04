@@ -15,7 +15,7 @@ export const PrimaryButton = styled(BaseButton)`
   color: ${(props) => props.theme.palette.common.white};
   background-color: ${(props) => props.theme.palette.primary.main};
   transition: background-color 0.3s;
-  &:hover{
+  &:hover {
     background-color: ${(props) => props.theme.palette.primary.light1};
   }
 `;
@@ -23,9 +23,9 @@ export const PrimaryButton = styled(BaseButton)`
 export const SecondaryButton = styled(BaseButton)`
   background-color: inherit;
   color: ${(props) => props.theme.palette.primary.main};
-  border: 1px solid ${(props) => props.theme.palette.primary.main};;
+  border: 1px solid ${(props) => props.theme.palette.primary.main};
   /* transition: background-color 0.3s; */
-  &:hover{
+  &:hover {
     color: ${(props) => props.theme.palette.primary.light2};
     border-color: ${(props) => props.theme.palette.primary.light2};
   }

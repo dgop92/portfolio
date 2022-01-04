@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { BasePageCenter, BaseSection } from "../../components/layout";
 import { PrimaryButton, SecondaryButton } from "../../components/buttons";
+import { withScrollFadeInAnimation } from "../../components/hocs";
 
 export const ProjectPage = styled(BasePageCenter)`
   flex-direction: column;
@@ -17,13 +18,16 @@ export const ProjectSection = styled(BaseSection)`
   }
 `;
 
-export const ProjectContainer = styled.article`
-  display: flex;
-  flex-direction: column;
-  background-color: ${(props) => props.theme.palette.background.paper};
+export const ProjectContainer = withScrollFadeInAnimation(
+  styled.article`
+    display: flex;
+    flex-direction: column;
+    background-color: ${(props) => props.theme.palette.background.paper};
 
-  padding: 1.2rem;
-`;
+    padding: 1.2rem;
+  `,
+  0
+);
 
 export const ProjectTitle = styled.div`
   display: flex;

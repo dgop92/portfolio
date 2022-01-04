@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { BasePageCenter, BaseSection } from "../../components/layout";
 import { PrimaryButton } from "../../components/buttons";
+import { withScrollFadeInAnimation } from "../../components/hocs";
 
 export const AboutPage = styled(BasePageCenter)``;
 
@@ -14,10 +15,10 @@ export const AboutSection = styled(BaseSection)`
   }
 `;
 
-export const AboutArticle = styled.article`
+export const AboutArticle = withScrollFadeInAnimation(styled.article`
   padding: 2rem;
   background-color: ${(props) => props.theme.palette.background.paper};
-`;
+`);
 
 export const ArticleTitle = styled.h5`
   margin: 0 0;
