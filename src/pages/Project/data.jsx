@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
 import { ImTree } from "react-icons/im";
+import { BsFillChatFill } from "react-icons/bs";
 import { techTagsOptions } from "../../constants/globals";
 
 export const projectItems = [
@@ -33,6 +34,14 @@ export const projectItems = [
     description: "RETAIL_TECH_DESCRIPTION",
     href: "https://github.com/dgop92/retail-tech-business-api",
     techTags: [techTagsOptions.DJANGO],
+  },
+  {
+    name: "Anon Chat",
+    icon: <BsFillChatFill />,
+    description: "ANON_CHAT_DESCRIPTION",
+    href: "https://github.com/dgop92/anon-chat",
+    viewProjectHref: "https://dgop92-anon-chat.netlify.app",
+    techTags: [techTagsOptions.REACTJS, techTagsOptions.JS],
   },
   {
     name: "Binary tree builder",

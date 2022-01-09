@@ -31,7 +31,6 @@ const About = React.forwardRef((props, ref) => {
           <ArticleTitle>{langStrs.ABOUT_TITLE}</ArticleTitle>
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_1}</Paragraph>
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_2}</Paragraph>
-          <Paragraph>{langStrs.ABOUT_PARAGRAPH_3}</Paragraph>
           <DownloadButton onClick={downloadCV}>
             {langStrs.DOWNLOAD_CV}
           </DownloadButton>

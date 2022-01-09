@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 const translations = {
-  JOB_TITLE: "Desarrollador python junior",
+  JOB_TITLE: "Desarrollador web python",
 
   LINK_HOME: "home",
   LINK_ABOUT: "acerca de",
@@ -10,9 +10,9 @@ const translations = {
   ABOUT_TITLE: "Acerca de mí",
 
   ABOUT_PARAGRAPH_1:
-    "Hola! Mi nombre es Diego Puche, desarrollador back-end python centrado en el desarrollo de API usando Django Rest framework.",
+    "Hola! Mi nombre es Diego Puche, desarrollador web centrado en el desarrollo de aplicaciones usando Django Rest framework y React JS.",
   ABOUT_PARAGRAPH_2:
-    "Me considero una persona analítica y pensadora, siempre buscando la solución más efectiva a los problemas que me enfrento. Python me permite resolver estos problemas rápidamente y elegantemente, haciéndolo uno de mis lenguajes preferidos.",
+    "Me considero una persona analítica y pensadora, lo cual hace que me interese más por la lógica que por lo visual. Una de mis peculiaridades es realizar proyectos a partir de problemáticas reales, generalmente con Python qué es uno de mis lenguajes preferidos.",
   ABOUT_PARAGRAPH_3:
     "Ser estático es algo que no me gusta, es por eso que siempre aprendo a través de la experiencia, con el fin de poder hacer mejores proyectos en el futuro.",
 
@@ -55,6 +55,8 @@ const translations = {
     "Una aplicación para manejar un pequeño negocio minorista de tecnología. Mira el repositorio para más información acerca de la preview",
   GUTILS_DESCRIPTION:
     "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
+  ANON_CHAT_DESCRIPTION:
+    "Una simple aplicación de chat anónimo construida con socket io y react js.",
 
   PROJECT_SECONDARY_PROJECTS: "Ver proyectos secundarios",
 
