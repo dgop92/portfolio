@@ -32,9 +32,22 @@ export const Paragraph = styled.p`
   color: ${(props) => props.theme.palette.text.secondary};
 `;
 
-export const DownloadButton = styled(PrimaryButton)`
+export const CVContainer = styled.div`
   margin-top: 2rem;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const CVNote = styled.p`
+  font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+  color: ${(props) => props.theme.palette.text.secondary};
+  text-align: center;
+`;
+
+export const ShowCVButton = styled(PrimaryButton)`
+  text-align: center;
+  text-decoration: none;
 `;
 
 export const HobbieList = styled.ul`

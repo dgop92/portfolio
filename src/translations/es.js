@@ -20,7 +20,8 @@ const translations = {
   HOBBIE_ITEM_2: "Ver películas y series.",
   HOBBIE_ITEM_3: "Escribir código para tareas repetitivas.",
 
-  DOWNLOAD_CV: "Descargar CV",
+  SHOW_CV: "Ver CV",
+  SHOW_CV_MESSAGE: "Hasta ahora, solo está disponible en Español",
   CV_MESSAGE: "Es muy temprano para tener uno de esos.",
 
   SKILL_TITLE: "Habilidades",
