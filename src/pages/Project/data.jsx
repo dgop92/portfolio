@@ -6,6 +6,7 @@ import {
   FaTerminal,
   FaUniversity,
   FaBusinessTime,
+  FaRoute,
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
 import { ImTree } from "react-icons/im";
@@ -27,6 +28,13 @@ export const projectItems = [
     description: "COMMUNOTES_DESCRIPTION",
     href: "https://github.com/dgop92/communotes",
     techTags: [techTagsOptions.DJANGO],
+  },
+  {
+    name: "Transmetro Paths",
+    icon: <FaRoute />,
+    description: "TRANSMETRO_DESCRIPTION",
+    href: "https://github.com/dgop92/transmetro-path",
+    techTags: [techTagsOptions.PYTHON],
   },
   {
     name: "Retail Tech Business API",
@@ -51,6 +59,9 @@ export const projectItems = [
     viewProjectHref: "https://binary-tree-builder.netlify.app/",
     techTags: [techTagsOptions.TYPESCRIPT],
   },
+];
+
+export const extraProjects = [
   {
     name: "G-Utils",
     icon: <FaTerminal />,
@@ -58,9 +69,6 @@ export const projectItems = [
     href: "https://github.com/dgop92/gutils",
     techTags: [techTagsOptions.PYTHON],
   },
-];
-
-export const extraProjects = [
   {
     name: "Inevaup Negocios",
     icon: <FaBusinessTime />,

@@ -58,6 +58,8 @@ const translations = {
     "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
   ANON_CHAT_DESCRIPTION:
     "Una simple aplicación de chat anónimo construida con socket io y react js.",
+  TRANSMETRO_DESCRIPTION:
+    "Una API que permite encontrar diferentes caminos/rutas para poder viajar de un punto partida a uno destino a través de la red Transmetro de Barranquilla",
 
   PROJECT_SECONDARY_PROJECTS: "Ver proyectos secundarios",
 
