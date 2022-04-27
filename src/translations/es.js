@@ -66,6 +66,7 @@ const translations = {
   CONTACT_TITLE: "Contactame",
   CONTACT_ITEM_1: "Escribeme un correo",
   CONTACT_ITEM_2: "Visita mi Github",
+  CONTACT_ITEM_3: "Visita mi Linkedin",
   CONTACT_COPY: "Desarrollado y diseñado por Diego Puche",
 };
 

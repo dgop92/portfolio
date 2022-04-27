@@ -1,5 +1,5 @@
 import React from "react";
-import { SiGmail } from "react-icons/si";
+import { SiGmail, SiLinkedin } from "react-icons/si";
 import { FiGithub } from "react-icons/fi";
 import { useLanguage } from "../../../context/customContexts";
 import {
@@ -20,6 +20,11 @@ const contactList = [
     name: "CONTACT_ITEM_2",
     icon: <FiGithub color="#fff" />,
     href: "https://github.com/dgop92",
+  },
+  {
+    name: "CONTACT_ITEM_3",
+    icon: <SiLinkedin color="#fff" />,
+    href: "https://www.linkedin.com/in/dgop92/",
   },
 ];
 
