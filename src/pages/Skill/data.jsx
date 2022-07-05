@@ -1,9 +1,8 @@
 import React from "react";
 import {
-  SiCss3,
   SiDjango,
   SiGit,
-  SiHtml5,
+  SiNodeDotJs,
   SiJavascript,
   SiMaterialUi,
   SiPostgresql,
@@ -29,18 +28,14 @@ export const skillSetItems = [
         icon: <SiDjango color="#092E20" />,
       },
       {
-        name: "HTML",
-        icon: <SiHtml5 color="#E34F26" />,
-      },
-      {
-        name: "CSS",
-        icon: <SiCss3 color="#1572B6" />,
-      },
-      {
         name: "JavaScript",
         icon: (
           <SiJavascript color="#F7DF1E" style={{ backgroundColor: "black" }} />
         ),
+      },
+      {
+        name: "NodeJs",
+        icon: <SiNodeDotJs color="#88c043" />,
       },
       {
         name: "React JS",
