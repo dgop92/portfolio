@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
 
 const translations = {
-  JOB_TITLE: "Python web developer",
+  LANG: "en",
+
+  JOB_TITLE: "Backend web developer",
 
   LINK_HOME: "home",
   LINK_ABOUT: "about",
@@ -11,9 +13,9 @@ const translations = {
   ABOUT_TITLE: "About me",
 
   ABOUT_PARAGRAPH_1:
-    "Hi! My name is Diego Puche, Python web developer focused on app development using Django Rest framework and React JS.",
+    "Hi! My name is Diego Puche. Web developer focused on backend development using NodeJS or Django. I'm an analytical and thinking person. I enjoy solving problems and looking for the best solution while striving to create clean code.",
   ABOUT_PARAGRAPH_2:
-    "I'm an analytical and thinking person. I'm more interested in the logical part than the UI. One of my quirks is building projects based on real problems, usually using python, which is one of my favorite languages.",
+    "My side interest is Data Science. Even though I have less experience in this area, I am willing to learn if a challenge arises.",
   ABOUT_PARAGRAPH_3:
     "Being static is something that I don't like, and that's the reason why I learn through experience, to make better projects in the future.",
 

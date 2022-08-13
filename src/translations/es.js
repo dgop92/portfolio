@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 const translations = {
-  JOB_TITLE: "Desarrollador web python",
+  LANG: "es",
+
+  JOB_TITLE: "Desarrollador Backend",
 
   LINK_HOME: "home",
   LINK_ABOUT: "acerca de",
@@ -10,9 +12,9 @@ const translations = {
   ABOUT_TITLE: "Acerca de mí",
 
   ABOUT_PARAGRAPH_1:
-    "Hola! Mi nombre es Diego Puche, desarrollador web centrado en el desarrollo de aplicaciones usando Django Rest framework y React JS.",
+    "Hola! Mi nombre es Diego Puche, desarrollador web centrado en el desarrollo backend usando NodeJS o Django. Me considero una persona analítica y pensadora. Disfruto resolver problemas, buscando la mejor solución mientras me esfuerzo por crear código limpio.",
   ABOUT_PARAGRAPH_2:
-    "Me considero una persona analítica y pensadora, lo cual hace que me interese más por la lógica que por lo visual. Una de mis peculiaridades es realizar proyectos a partir de problemáticas reales, generalmente con Python qué es uno de mis lenguajes preferidos.",
+    "Mi interés secundario es Data Science. Aunque tengo menos experiencia en esta área, estoy dispuesto a aprender si un desafío se presenta",
   ABOUT_PARAGRAPH_3:
     "Ser estático es algo que no me gusta, es por eso que siempre aprendo a través de la experiencia, con el fin de poder hacer mejores proyectos en el futuro.",
 

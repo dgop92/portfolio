@@ -29,7 +29,7 @@ const About = React.forwardRef((props, ref) => {
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_1}</Paragraph>
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_2}</Paragraph>
           <CVContainer>
-            <ShowCVButton as="a" href="/DiegoPucheCV.pdf">
+            <ShowCVButton as="a" href="/ResumeDiegoPuche-Es.pdf">
               {langStrs.SHOW_CV}
             </ShowCVButton>
             <CVNote>{langStrs.SHOW_CV_MESSAGE}</CVNote>
