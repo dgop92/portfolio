@@ -43,6 +43,8 @@ const translations = {
     "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates.",
   RETAIL_TECH_DESCRIPTION:
     "An API that allows you to control exits and entries while collecting useful data to create insights for your business.",
+  RICK_AND_MORTY_NEXTJS:
+    "Rick and Morty episodes and characters. The project is created with the purpose of learning Next Js and how to consume a GraphQL API.",
   WHELPER_DESCRIPTION:
     "A mini-framework design to solve mathematical problems step-by-step using a solver template class and scraping the results from wolfram alpha.",
   SCHEDULE_MAKER_DESCRIPTION:

@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaSearch,
-  FaBriefcase,
   FaCalendarCheck,
   FaTerminal,
   FaUniversity,
@@ -9,6 +8,7 @@ import {
   FaRoute,
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
+import { GiPortal } from "react-icons/gi";
 import { ImTree } from "react-icons/im";
 import { BsFillChatFill } from "react-icons/bs";
 import { techTagsOptions } from "../../constants/globals";
@@ -37,11 +37,12 @@ export const projectItems = [
     techTags: [techTagsOptions.PYTHON],
   },
   {
-    name: "Retail Tech Business API",
-    icon: <FaBriefcase />,
-    description: "RETAIL_TECH_DESCRIPTION",
-    href: "https://github.com/dgop92/retail-tech-business-api",
-    techTags: [techTagsOptions.DJANGO],
+    name: "Rick and Morty NextJS",
+    icon: <GiPortal />,
+    description: "RICK_AND_MORTY_NEXTJS",
+    href: "https://github.com/dgop92/rick-morty-nextjs",
+    viewProjectHref: "https://rick-morty-nextjs-beta.vercel.app",
+    techTags: [techTagsOptions.REACTJS, techTagsOptions.TYPESCRIPT],
   },
   {
     name: "Anon Chat",

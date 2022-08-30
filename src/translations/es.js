@@ -43,7 +43,9 @@ const translations = {
   FINDGAP_DESCRIPTION:
     "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes.",
   RETAIL_TECH_DESCRIPTION:
-    "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio. ",
+    "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio.",
+  RICK_AND_MORTY_NEXTJS:
+    "Episodios y personajes de Rick y Morty. El proyecto es creado con el propósito de aprender Next Js y cómo consumir una API GraphQL.",
   WHELPER_DESCRIPTION:
     "Un mini-framework diseñado para resolver problemas matemáticos paso por paso usando el template pattern y recolectando los datos de wolfram alpha.",
   SCHEDULE_MAKER_DESCRIPTION:

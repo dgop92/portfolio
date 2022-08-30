@@ -10,7 +10,6 @@ import {
   ShowCVButton,
   HobbieList,
   HobbieItem,
-  CVNote,
   CVContainer,
 } from "./style";
 
@@ -21,6 +20,11 @@ const hobbieIcons = [<FaBookOpen />, <FaDesktop />, <FaCode />];
 const About = React.forwardRef((props, ref) => {
   const langStrs = useLanguage();
 
+  const cvHref =
+    langStrs.LANG === "en"
+      ? "/ResumeDiegoPuche-En.pdf"
+      : "/ResumeDiegoPuche-Es.pdf";
+
   return (
     <AboutPage {...props} ref={ref}>
       <AboutSection>
@@ -29,10 +33,10 @@ const About = React.forwardRef((props, ref) => {
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_1}</Paragraph>
           <Paragraph>{langStrs.ABOUT_PARAGRAPH_2}</Paragraph>
           <CVContainer>
-            <ShowCVButton as="a" href="/ResumeDiegoPuche-Es.pdf">
+            <ShowCVButton as="a" href={cvHref}>
               {langStrs.SHOW_CV}
             </ShowCVButton>
-            <CVNote>{langStrs.SHOW_CV_MESSAGE}</CVNote>
+            {/* <CVNote>{langStrs.SHOW_CV_MESSAGE}</CVNote> */}
           </CVContainer>
         </AboutArticle>
         <AboutArticle>
