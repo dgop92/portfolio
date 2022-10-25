@@ -6,6 +6,7 @@ import {
   FaUniversity,
   FaBusinessTime,
   FaRoute,
+  FaShoppingBasket,
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
 import { GiPortal } from "react-icons/gi";
@@ -23,6 +24,13 @@ export const projectItems = [
     techTags: [techTagsOptions.DJANGO, techTagsOptions.REACTJS],
   },
   {
+    name: "Sellers4U",
+    icon: <FaShoppingBasket />,
+    description: "SELLERS4U_DESCRIPTION",
+    href: "https://github.com/dgop92/sellers4u-api",
+    techTags: [techTagsOptions.TYPESCRIPT],
+  },
+  {
     name: "Communotes API",
     icon: <FaUniversity />,
     description: "COMMUNOTES_DESCRIPTION",
@@ -30,11 +38,18 @@ export const projectItems = [
     techTags: [techTagsOptions.DJANGO],
   },
   {
+    name: "Covid-19 Data visualization",
+    icon: <FaUniversity />,
+    description: "COVID19_DESCRIPTION",
+    href: "https://github.com/dgop92/covid-data-vis-client",
+    techTags: [techTagsOptions.REACTJS, techTagsOptions.FASTAPI],
+  },
+  {
     name: "Transmetro Paths",
     icon: <FaRoute />,
     description: "TRANSMETRO_DESCRIPTION",
     href: "https://github.com/dgop92/transmetro-path",
-    techTags: [techTagsOptions.PYTHON],
+    techTags: [techTagsOptions.FASTAPI],
   },
   {
     name: "Rick and Morty NextJS",
@@ -52,6 +67,9 @@ export const projectItems = [
     viewProjectHref: "https://dgop92-anon-chat.netlify.app",
     techTags: [techTagsOptions.REACTJS, techTagsOptions.JS],
   },
+];
+
+export const extraProjects = [
   {
     name: "Binary tree builder",
     icon: <ImTree />,
@@ -60,9 +78,6 @@ export const projectItems = [
     viewProjectHref: "https://binary-tree-builder.netlify.app/",
     techTags: [techTagsOptions.TYPESCRIPT],
   },
-];
-
-export const extraProjects = [
   {
     name: "G-Utils",
     icon: <FaTerminal />,
@@ -92,11 +107,11 @@ export const extraProjects = [
     href: "https://github.com/dgop92/schedule-maker",
     techTags: [techTagsOptions.PYTHON],
   },
-  {
+  /* {
     name: "Utils3",
     icon: <FaTerminal />,
     description: "UTILS3_DESCRIPTION",
     href: "https://github.com/dgop92/utils3",
     techTags: [techTagsOptions.PYTHON],
-  },
+  }, */
 ];

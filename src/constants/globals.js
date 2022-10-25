@@ -14,6 +14,10 @@ export const techTagsOptions = {
     name: "Django",
     bgColor: "#1ABC9C",
   },
+  FASTAPI: {
+    name: "FastAPI",
+    bgColor: "#E67E22",
+  },
   REACTJS: {
     name: "React Js",
     bgColor: "#34495E",

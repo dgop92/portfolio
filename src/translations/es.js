@@ -42,6 +42,10 @@ const translations = {
 
   FINDGAP_DESCRIPTION:
     "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes.",
+  SELLERS4U_DESCRIPTION:
+    "O2O (online to offline) Marketplace para estudiantes universitarios. Mi propia variante de arquitectura limpia implementada en NodeJS.",
+  COVID19_DESCRIPTION:
+    "Una simple aplicación de exploración y visualización de datos sobre el Covid-19",
   RETAIL_TECH_DESCRIPTION:
     "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio.",
   RICK_AND_MORTY_NEXTJS:

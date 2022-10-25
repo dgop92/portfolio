@@ -41,6 +41,10 @@ const translations = {
 
   FINDGAP_DESCRIPTION:
     "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates.",
+  SELLERS4U_DESCRIPTION:
+    "O2O (online to offline) Marketplace for university students. My own variant of  clean architecture implemented in NodeJS.",
+  COVID19_DESCRIPTION:
+    "Simple Covid-2019 data explanatory analysis and visualization",
   RETAIL_TECH_DESCRIPTION:
     "An API that allows you to control exits and entries while collecting useful data to create insights for your business.",
   RICK_AND_MORTY_NEXTJS:
