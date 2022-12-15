@@ -44,7 +44,7 @@ const translations = {
   SELLERS4U_DESCRIPTION:
     "O2O (online to offline) Marketplace for university students. My own variant of  clean architecture implemented in NodeJS.",
   COVID19_DESCRIPTION:
-    "Simple Covid-2019 data explanatory analysis and visualization",
+    "Simple Covid-2019 data explanatory analysis and visualization. Charts may take a while to load due to the free plan from render.com platform.",
   RETAIL_TECH_DESCRIPTION:
     "An API that allows you to control exits and entries while collecting useful data to create insights for your business.",
   RICK_AND_MORTY_NEXTJS:
@@ -60,11 +60,11 @@ const translations = {
   BINTREE_BUILDER_DESCRIPTION:
     "A small app to quickly build binary trees and get their representation in code. Useful for testing binary tree algorithms",
   INEVAUP_NEGOCIOS_DESCRIPTION:
-    "a simple app for managing a small tech retail businesses. See the repository for more information about the preview",
+    "a simple app for managing a small tech retail businesses. See the repository for more information about the preview. Backend is down due to heroku free plan removal",
   GUTILS_DESCRIPTION:
     "a CLI that contains utilities for graph theory and graph algorithms.",
   ANON_CHAT_DESCRIPTION:
-    "A simple anonymous chat app using socket io and react js.",
+    "A simple anonymous chat app using socket io and react js. Backend is down due to heroku free plan removal",
   TRANSMETRO_DESCRIPTION:
     "An API that allows you to find different paths/routes to be able to travel from a starting point to a destination through the Transmetro of Barranquilla network",
 

@@ -45,7 +45,7 @@ const translations = {
   SELLERS4U_DESCRIPTION:
     "O2O (online to offline) Marketplace para estudiantes universitarios. Mi propia variante de arquitectura limpia implementada en NodeJS.",
   COVID19_DESCRIPTION:
-    "Una simple aplicación de exploración y visualización de datos sobre el Covid-19",
+    "Una simple aplicación de exploración y visualización de datos sobre el Covid-19. Los gráficos pueden tardar un poco en cargarse debido al plan gratis de render.com",
   RETAIL_TECH_DESCRIPTION:
     "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio.",
   RICK_AND_MORTY_NEXTJS:
@@ -61,11 +61,11 @@ const translations = {
   BINTREE_BUILDER_DESCRIPTION:
     "Una pequeña aplicación para construir árboles binarios de manera rápida y obtener su representación en código. Útil para probar algoritmos de árboles binarios.",
   INEVAUP_NEGOCIOS_DESCRIPTION:
-    "Una aplicación para manejar un pequeño negocio minorista de tecnología. Mira el repositorio para más información acerca de la preview",
+    "Una aplicación para manejar un pequeño negocio minorista de tecnología. Mira el repositorio para más información acerca de la preview. El backend está inactivo debido a la eliminación del plan gratuito de heroku",
   GUTILS_DESCRIPTION:
     "una CLI qué contiene utilidades para teoría de grafos y algoritmos de grafos.",
   ANON_CHAT_DESCRIPTION:
-    "Una simple aplicación de chat anónimo construida con socket io y react js.",
+    "Una simple aplicación de chat anónimo construida con socket io y react js. El backend está inactivo debido a la eliminación del plan gratuito de heroku",
   TRANSMETRO_DESCRIPTION:
     "Una API que permite encontrar diferentes caminos/rutas para poder viajar de un punto partida a uno destino a través de la red Transmetro de Barranquilla",
 

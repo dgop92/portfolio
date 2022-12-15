@@ -42,6 +42,7 @@ export const projectItems = [
     icon: <FaUniversity />,
     description: "COVID19_DESCRIPTION",
     href: "https://github.com/dgop92/covid-data-vis-client",
+    viewProjectHref: "https://covid-eda.netlify.app/",
     techTags: [techTagsOptions.REACTJS, techTagsOptions.FASTAPI],
   },
   {

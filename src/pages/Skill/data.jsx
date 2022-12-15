@@ -3,7 +3,7 @@ import {
   SiDjango,
   SiGit,
   SiNodeDotJs,
-  SiJavascript,
+  SiTypescript,
   SiMaterialUi,
   SiPostgresql,
   SiPostman,
@@ -28,10 +28,8 @@ export const skillSetItems = [
         icon: <SiDjango color="#092E20" />,
       },
       {
-        name: "JavaScript",
-        icon: (
-          <SiJavascript color="#F7DF1E" style={{ backgroundColor: "black" }} />
-        ),
+        name: "Typescript",
+        icon: <SiTypescript color="#3178c6" />,
       },
       {
         name: "NodeJs",
