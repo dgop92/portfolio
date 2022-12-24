@@ -45,6 +45,8 @@ const translations = {
     "O2O (online to offline) Marketplace for university students. My own variant of  clean architecture implemented in NodeJS.",
   COVID19_DESCRIPTION:
     "Simple Covid-2019 data explanatory analysis and visualization. Charts may take a while to load due to the free plan from render.com platform.",
+  EVEPCOUNT_DESCRIPTION:
+    "Evepcount is a system for counting the number of people at lectures and events. With it, you can create events and each event can contain multiple photos. You can use Evepcount to extract the number of people present in those photos. First project using message queues.",
   RETAIL_TECH_DESCRIPTION:
     "An API that allows you to control exits and entries while collecting useful data to create insights for your business.",
   RICK_AND_MORTY_NEXTJS:

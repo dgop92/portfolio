@@ -11,7 +11,7 @@ import {
 import { CgMathEqual } from "react-icons/cg";
 import { GiPortal } from "react-icons/gi";
 import { ImTree } from "react-icons/im";
-import { BsFillChatFill } from "react-icons/bs";
+import { BsFillChatFill, BsCamera } from "react-icons/bs";
 import { techTagsOptions } from "../../constants/globals";
 
 export const projectItems = [
@@ -36,6 +36,13 @@ export const projectItems = [
     description: "COMMUNOTES_DESCRIPTION",
     href: "https://github.com/dgop92/communotes",
     techTags: [techTagsOptions.DJANGO],
+  },
+  {
+    name: "Evepcount",
+    icon: <BsCamera />,
+    description: "EVEPCOUNT_DESCRIPTION",
+    href: "https://github.com/dgop92/evepcount",
+    techTags: [techTagsOptions.FASTAPI, techTagsOptions.TYPESCRIPT],
   },
   {
     name: "Covid-19 Data visualization",

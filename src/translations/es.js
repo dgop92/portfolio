@@ -46,6 +46,8 @@ const translations = {
     "O2O (online to offline) Marketplace para estudiantes universitarios. Mi propia variante de arquitectura limpia implementada en NodeJS.",
   COVID19_DESCRIPTION:
     "Una simple aplicación de exploración y visualización de datos sobre el Covid-19. Los gráficos pueden tardar un poco en cargarse debido al plan gratis de render.com",
+  EVEPCOUNT_DESCRIPTION:
+    "Evepcount es un sistema para contar el número de personas en conferencias y eventos. Con él, puedes crear eventos y cada evento puede contener varias fotos. Puedes usar Evepcount para extraer el número de personas presentes en esas fotos. Primer proyecto usando message queues",
   RETAIL_TECH_DESCRIPTION:
     "Una API que te permite controlar entradas y salidas mientras recolectas datos útiles para crear ideas sobre tu negocio.",
   RICK_AND_MORTY_NEXTJS:
