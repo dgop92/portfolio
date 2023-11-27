@@ -12,7 +12,7 @@ const translations = {
   ABOUT_TITLE: "Acerca de mí",
 
   ABOUT_PARAGRAPH_1:
-    "Hola! Mi nombre es Diego Puche, desarrollador web centrado en el desarrollo backend usando NodeJS o Django. Me considero una persona analítica y pensadora. Disfruto resolver problemas, buscando la mejor solución mientras me esfuerzo por crear código limpio.",
+    "Hola! Soy un desarrollador web con énfasis en el desarrollo backend usando NodeJS / ReactJS. Me gusta resolver problemas y crear soluciones óptimas. Tengo un fuerte compromiso con la incorporación de las mejores prácticas de ingeniería de software para garantizar la entrega de código limpio y robusto.",
   ABOUT_PARAGRAPH_2:
     "Mi interés secundario es Data Science. Aunque tengo menos experiencia en esta área, estoy dispuesto a aprender si un desafío se presenta",
   ABOUT_PARAGRAPH_3:

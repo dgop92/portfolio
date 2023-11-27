@@ -13,7 +13,7 @@ const translations = {
   ABOUT_TITLE: "About me",
 
   ABOUT_PARAGRAPH_1:
-    "Hi! My name is Diego Puche. Web developer focused on backend development using NodeJS or Django. I'm an analytical and thinking person. I enjoy solving problems and looking for the best solution while striving to create clean code.",
+    "Hi! My name is Diego Puche. I'm a Web developer with emphasis in backend development using NodeJS / ReactJS. I enjoy problem-solving and crafting optimal solutions. I have a strong commitment to incorporating software engineer best practices to ensure the delivery of clean and robust code.",
   ABOUT_PARAGRAPH_2:
     "My side interest is Data Science. Even though I have less experience in this area, I am willing to learn if a challenge arises.",
   ABOUT_PARAGRAPH_3:

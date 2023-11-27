@@ -14,9 +14,9 @@ import {
 } from "./style";
 
 const RESUME_EN =
-  "https://drive.google.com/file/d/1uhtCTaosD-cgK1aBlZms-67_qEcFRlfw/view?usp=sharing";
+  "https://drive.google.com/file/d/1VL_pTerdKk0tTZXcdftjbPmN-8itLo-I/view?usp=sharing";
 const RESUME_ES =
-  "https://drive.google.com/file/d/1UpsbaLCDlqvjz9hGrKL8XtoDDSDswVSd/view?usp=sharing";
+  "https://drive.google.com/file/d/1VL_pTerdKk0tTZXcdftjbPmN-8itLo-I/view?usp=sharing";
 
 const hobbieNames = ["HOBBIE_ITEM_1", "HOBBIE_ITEM_2", "HOBBIE_ITEM_3"];
 
