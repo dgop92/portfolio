@@ -40,7 +40,7 @@ const translations = {
   PROJECT_TITLE: "Projects",
 
   FINDGAP_DESCRIPTION:
-    "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates.",
+    "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates. (Backend is down due to heroku free plan removal)",
   SELLERS4U_DESCRIPTION:
     "O2O (online to offline) Marketplace for university students. My own variant of  clean architecture implemented in NodeJS.",
   COVID19_DESCRIPTION:

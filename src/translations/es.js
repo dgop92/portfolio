@@ -41,7 +41,7 @@ const translations = {
   PROJECT_TITLE: "Proyectos",
 
   FINDGAP_DESCRIPTION:
-    "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes.",
+    "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes. (El backend está inactivo debido a la eliminación del plan gratuito de heroku)",
   SELLERS4U_DESCRIPTION:
     "O2O (online to offline) Marketplace para estudiantes universitarios. Mi propia variante de arquitectura limpia implementada en NodeJS.",
   COVID19_DESCRIPTION:
