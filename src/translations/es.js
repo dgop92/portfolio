@@ -40,6 +40,8 @@ const translations = {
 
   PROJECT_TITLE: "Proyectos",
 
+  FITVOICE_DESCRIPTION:
+    "un backend monorepo para una aplicación que permite a las personas realizar un seguimiento de su ingesta de alimentos grabando por voz lo que comen a lo largo del día.",
   FINDGAP_DESCRIPTION:
     "Una API que permite buscar huecos en común (horas libres entre las clases de la universidad) dado los horarios de un grupo de estudiantes. (El backend está inactivo debido a la eliminación del plan gratuito de heroku)",
   SELLERS4U_DESCRIPTION:

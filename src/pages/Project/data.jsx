@@ -7,6 +7,7 @@ import {
   FaBusinessTime,
   FaRoute,
   FaShoppingBasket,
+  FaUtensilSpoon,
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
 import { GiPortal } from "react-icons/gi";
@@ -15,6 +16,13 @@ import { BsFillChatFill, BsCamera } from "react-icons/bs";
 import { techTagsOptions } from "../../constants/globals";
 
 export const projectItems = [
+  {
+    name: "FitVoice",
+    icon: <FaUtensilSpoon />,
+    description: "FITVOICE_DESCRIPTION",
+    href: "https://github.com/dgop92/speech2diet",
+    techTags: [techTagsOptions.PYTHON, techTagsOptions.TYPESCRIPT],
+  },
   {
     name: "GapFind",
     icon: <FaSearch />,

@@ -13,7 +13,7 @@ const translations = {
   ABOUT_TITLE: "About me",
 
   ABOUT_PARAGRAPH_1:
-    "Hi! My name is Diego Puche. I'm a Web developer with emphasis in backend development using NodeJS / ReactJS. I enjoy problem-solving and crafting optimal solutions. I have a strong commitment to incorporating software engineer best practices to ensure the delivery of clean and robust code.",
+    "Hi! My name is Diego Puche. I'm a Web developer with emphasis on backend development using NodeJS / ReactJS. I enjoy problem-solving and crafting optimal solutions. I have a strong commitment to incorporating software engineer best practices to ensure the delivery of clean and robust code.",
   ABOUT_PARAGRAPH_2:
     "My side interest is Data Science. Even though I have less experience in this area, I am willing to learn if a challenge arises.",
   ABOUT_PARAGRAPH_3:
@@ -39,6 +39,8 @@ const translations = {
 
   PROJECT_TITLE: "Projects",
 
+  FITVOICE_DESCRIPTION:
+    "a mono repo backend for an app which allows people to track their food intake by voice recording what they eat throughout the day",
   FINDGAP_DESCRIPTION:
     "An API to find common gaps (free hours between the university classes) given the schedules from a group of classmates. (Backend is down due to heroku free plan removal)",
   SELLERS4U_DESCRIPTION:
