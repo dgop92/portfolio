@@ -4,15 +4,13 @@ import {
   FaCalendarCheck,
   FaTerminal,
   FaUniversity,
-  FaBusinessTime,
   FaRoute,
-  FaShoppingBasket,
   FaUtensilSpoon,
 } from "react-icons/fa";
 import { CgMathEqual } from "react-icons/cg";
 import { GiPortal } from "react-icons/gi";
 import { ImTree } from "react-icons/im";
-import { BsFillChatFill, BsCamera } from "react-icons/bs";
+import { BsCamera } from "react-icons/bs";
 import { techTagsOptions } from "../../constants/globals";
 
 export const projectItems = [
@@ -28,10 +26,10 @@ export const projectItems = [
     icon: <FaSearch />,
     description: "FINDGAP_DESCRIPTION",
     href: "https://github.com/dgop92/gfind",
-    viewProjectHref: "https://gapfind.netlify.app",
+    viewProjectHref: "https://gapfind.pages.dev/home",
     techTags: [techTagsOptions.DJANGO, techTagsOptions.REACTJS],
   },
-  {
+  /* {
     name: "Sellers4U",
     icon: <FaShoppingBasket />,
     description: "SELLERS4U_DESCRIPTION",
@@ -44,7 +42,7 @@ export const projectItems = [
     description: "COMMUNOTES_DESCRIPTION",
     href: "https://github.com/dgop92/communotes",
     techTags: [techTagsOptions.DJANGO],
-  },
+  }, */
   {
     name: "Evepcount",
     icon: <BsCamera />,
@@ -57,7 +55,7 @@ export const projectItems = [
     icon: <FaUniversity />,
     description: "COVID19_DESCRIPTION",
     href: "https://github.com/dgop92/covid-data-vis-client",
-    viewProjectHref: "https://covid-eda.netlify.app/",
+    viewProjectHref: "https://covid-eda.pages.dev",
     techTags: [techTagsOptions.REACTJS, techTagsOptions.FASTAPI],
   },
   {
@@ -75,14 +73,14 @@ export const projectItems = [
     viewProjectHref: "https://rick-morty-nextjs-beta.vercel.app",
     techTags: [techTagsOptions.REACTJS, techTagsOptions.TYPESCRIPT],
   },
-  {
+  /*  {
     name: "Anon Chat",
     icon: <BsFillChatFill />,
     description: "ANON_CHAT_DESCRIPTION",
     href: "https://github.com/dgop92/anon-chat",
     viewProjectHref: "https://dgop92-anon-chat.netlify.app",
     techTags: [techTagsOptions.REACTJS, techTagsOptions.JS],
-  },
+  }, */
 ];
 
 export const extraProjects = [
@@ -91,7 +89,7 @@ export const extraProjects = [
     icon: <ImTree />,
     description: "BINTREE_BUILDER_DESCRIPTION",
     href: "https://github.com/dgop92/binary-tree-builder-typescript",
-    viewProjectHref: "https://binary-tree-builder.netlify.app/",
+    viewProjectHref: "https://dgop92.github.io/binary-tree-builder/",
     techTags: [techTagsOptions.TYPESCRIPT],
   },
   {
@@ -100,14 +98,6 @@ export const extraProjects = [
     description: "GUTILS_DESCRIPTION",
     href: "https://github.com/dgop92/gutils",
     techTags: [techTagsOptions.PYTHON],
-  },
-  {
-    name: "Inevaup Negocios",
-    icon: <FaBusinessTime />,
-    description: "INEVAUP_NEGOCIOS_DESCRIPTION",
-    href: "https://github.com/dgop92/inevaup-negocios-react",
-    viewProjectHref: "https://inevaup-negocios.netlify.app/login",
-    techTags: [techTagsOptions.REACTJS],
   },
   {
     name: "Wolfram Helper",
