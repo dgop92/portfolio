@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  SiDjango,
   SiGit,
   SiNodeDotJs,
   SiTypescript,
@@ -8,7 +7,9 @@ import {
   SiPostgresql,
   SiPostman,
   SiReact,
+  SiSpring,
   SiVisualstudiocode,
+  SiAmazonaws,
 } from "react-icons/si";
 import { ReactComponent as PyhonLogo } from "../../assets/custom-dev-icons/python.svg";
 import { ReactComponent as FigmaLogo } from "../../assets/custom-dev-icons/figma.svg";
@@ -24,8 +25,8 @@ export const skillSetItems = [
         icon: <PyhonLogo />,
       },
       {
-        name: "Django",
-        icon: <SiDjango color="#092E20" />,
+        name: "Spring",
+        icon: <SiSpring color="#6DB33F" />,
       },
       {
         name: "Typescript",
@@ -46,6 +47,10 @@ export const skillSetItems = [
       {
         name: "Postgres",
         icon: <SiPostgresql color="#336791" />,
+      },
+      {
+        name: "AWS",
+        icon: <SiAmazonaws color="#FF9900" />,
       },
     ],
     paragraph: "SKILL_SET_1",

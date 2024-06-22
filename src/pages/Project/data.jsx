@@ -19,6 +19,7 @@ export const projectItems = [
     icon: <FaUtensilSpoon />,
     description: "FITVOICE_DESCRIPTION",
     href: "https://github.com/dgop92/speech2diet",
+    viewProjectHref: "https://fitvoice.dgop92.me",
     techTags: [techTagsOptions.PYTHON, techTagsOptions.TYPESCRIPT],
   },
   {
